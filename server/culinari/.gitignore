@@ -220,3 +220,5 @@ $RECYCLE.BIN/
 /build/
 /src/main/generated/
 /UserHttpRequest.http
+/src/main/resources/application-dev.yaml
+/src/main/resources/application-prod.yaml
