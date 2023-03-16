@@ -30,8 +30,66 @@
             <outputPatternAsHeader>true</outputPatternAsHeader>
         </encoder>
     </appender>
+
+    <appender name="MDC" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${log.dir}/mdc.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${log.dir}/archive/mdc.%d{yyyy-MM-dd}_%i.log</fileNamePattern>
+            <maxFileSize>10KB</maxFileSize>
+            <maxHistory>30</maxHistory>  <!-- 로그 파일 최대 보관 주기 (단위 : d) -->
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>
+                [MDC] %X{job}%n
+            </pattern>
+            <outputPatternAsHeader>true</outputPatternAsHeader>
+        </encoder>
+    </appender>
+
+    <appender name="ERROR" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${log.dir}/error.log</file>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>error</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${log.dir}/archive/error.%d{yyyy-MM-dd}_%i.log</fileNamePattern>
+            <maxFileSize>10KB</maxFileSize>
+            <maxHistory>30</maxHistory>  <!-- 로그 파일 최대 보관 주기 (단위 : d) -->
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>
+                [ERROR] ${log.pattern}
+            </pattern>
+            <outputPatternAsHeader>true</outputPatternAsHeader>
+        </encoder>
+    </appender>
+
+    <appender name="WARN" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>${log.dir}/warn.log</file>
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>WARN</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
+            <fileNamePattern>${log.dir}/archive/warn.%d{yyyy-MM-dd}_%i.log</fileNamePattern>
+            <maxFileSize>10KB</maxFileSize>
+            <maxHistory>30</maxHistory>  <!-- 로그 파일 최대 보관 주기 (단위 : d) -->
+        </rollingPolicy>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>
+                [WARN] ${log.pattern}
+            </pattern>
+            <outputPatternAsHeader>true</outputPatternAsHeader>
+        </encoder>
+    </appender>
+
     <root level="INFO">
-        <appender-ref ref="REQUEST1"/>
-        <appender-ref ref="REQUEST2"/>
+<!--        <appender-ref ref="REQUEST1"/>-->
+<!--        <appender-ref ref="REQUEST2"/>-->
+        <appender-ref ref="WARN"/>
+        <appender-ref ref="ERROR"/>
     </root>
 </included>
