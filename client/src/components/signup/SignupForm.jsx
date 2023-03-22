@@ -18,7 +18,7 @@ import {
   SignupSuccessContainer,
   SignupFailureContainer,
 } from "../../styles/signupStyle";
-import BasicButton from "../BasicButton";
+import BasicButton from "../button/BasicButton";
 
 function SignForm() {
   const [signupAddress, setSignupAddress] = useState("");

@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import BasicButton from "./BasicButton";
+import BasicButton from "./button/BasicButton";
 
 const Layout = styled.div`
   border: 1px solid #d7d7d7;

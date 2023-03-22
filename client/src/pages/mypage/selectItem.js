@@ -3,7 +3,7 @@ import Mypagehead from "../../components/MypageHead";
 import styled from "styled-components";
 import ListLayout from "../../components/ListLayout";
 import ProductItem from "../../components/ProductItem";
-import BasicButton from "../../components/BasicButton";
+import BasicButton from "../../components/button/BasicButton";
 import axios from "axios";
 import CountBox from "../../components/CountBox";
 import Guidance from "../../components/Guidance";

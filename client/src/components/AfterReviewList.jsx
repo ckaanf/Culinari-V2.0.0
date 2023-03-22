@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import BasicButton from "./BasicButton";
+import BasicButton from "./button/BasicButton";
 import { ReviewStar } from "../components/ReviewStar";
 import { useEffect, useState } from "react";
 import axios from "axios";

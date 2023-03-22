@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
 import CheckBox from "../CheckBox";
-import DeleteButton from "../DeleteButton";
+import DeleteButton from "../button/DeleteButton";
 import QuantityBox from "../QuantityBox";
 
 const Container = styled.div`

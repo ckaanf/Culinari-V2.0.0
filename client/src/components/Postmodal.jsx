@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { IoIosAdd } from "react-icons/io";
 import { useState } from "react";
 import BasicInput from "./BasicInput";
-import Basicbutton from "./BasicButton";
+import Basicbutton from "./button/BasicButton";
 import ModalContainer from "./signup/ModalCotainer";
 import { IdBlock } from "../styles/signupStyle";
 import SideInput from "./SideInput";

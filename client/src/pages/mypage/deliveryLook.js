@@ -5,7 +5,7 @@ import axios from "axios";
 import { format, add } from "date-fns";
 import ListLayout from "../../components/ListLayout";
 import Mypagehead from "../../components/MypageHead";
-import BasicButton from "../../components/BasicButton";
+import BasicButton from "../../components/button/BasicButton";
 import CreateInquiry from "../productDetail/productContent/CreateInquiry";
 import {OtherPagination} from "../../components/OtherPagination"
 import Guidance from "../../components/Guidance"

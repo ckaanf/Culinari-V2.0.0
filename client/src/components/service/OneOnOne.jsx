@@ -6,7 +6,7 @@ import styled from "styled-components";
 
 import OneOnOneHeader from "./OneOnOneHeader";
 import OneOnOneList from "./OneOnOneList";
-import BasicButton from "../BasicButton";
+import BasicButton from "../button/BasicButton";
 import { OtherPagination } from "../OtherPagination";
 
 const Page = styled.div`
