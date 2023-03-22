@@ -1,7 +1,6 @@
 import * as React from "react";
 import {useLocation,Navigate,} from "react-router-dom";
 
-
 let AuthContext = React.createContext(null);
 function getLocalStorage(){
     return JSON.parse(localStorage.getItem("token"))?.authorization;

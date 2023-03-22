@@ -17,14 +17,12 @@ import FailPayment from "./components/pay/FailPayment";
 import Footer from "./components/footer/Footer";
 import {AuthProvider, RequireAuth} from "./AuthRoute";
 
-
 const GlobalStyle = createGlobalStyle`
     ${reset};
     html,body{
         padding: 0;
         margin: 0;
       };
-
 
       * {
       box-sizing: border-box;
