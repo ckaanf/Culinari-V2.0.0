@@ -3,8 +3,8 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
-import BasicButton from "../../../components/BasicButton";
-import DeleteButton from "../../../components/DeleteButton";
+import BasicButton from "../../../components/button/BasicButton";
+import DeleteButton from "../../../components/button/DeleteButton";
 
 const Container = styled.div`
   display: flex;

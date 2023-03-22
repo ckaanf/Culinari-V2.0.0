@@ -5,7 +5,7 @@ import { useState } from "react";
 import { useParams } from "react-router-dom";
 import styled from "styled-components";
 import { ReviewContainer, AnswerContainer } from "../../styles/OneOnOneStyle";
-import BasicButton from "../BasicButton";
+import BasicButton from "../button/BasicButton";
 import AnswerList from "./AnswerList";
 
 function Answer() {

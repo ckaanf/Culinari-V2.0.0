@@ -2,7 +2,7 @@ import { useState } from "react";
 import axios from "axios";
 import styled from "styled-components";
 import SideInput from "./SideInput";
-import BasicInput from "./BasicButton";
+import BasicInput from "./button/BasicButton";
 
 const Layout = styled.div`
   background-color: rgba(0, 0, 0, 0.333);

@@ -4,7 +4,7 @@ import styled from "styled-components";
 import { loadTossPayments } from "@tosspayments/payment-sdk";
 import { useSelector } from "react-redux";
 
-import BasicButton from "../BasicButton";
+import BasicButton from "../button/BasicButton";
 import OrderInfo from "./OrderInfo";
 import ShipInfo from "./ShipInfo";
 import PayInfo from "./PayInfo";

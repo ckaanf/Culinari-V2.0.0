@@ -1,11 +1,11 @@
 import styled from "styled-components";
 import { IoIosAdd } from "react-icons/io";
 import { useState } from "react";
-import BasicInput from "../components/BasicInput";
+import BasicInput from "../BasicInput";
 import Basicbutton from "../components/BasicButton";
-import ModalContainer from "../components/signup/ModalCotainer";
-import { IdBlock } from "../styles/signupStyle";
-import SideInput from "./SideInput";
+import ModalContainer from "../signup/ModalCotainer";
+import { IdBlock } from "../../styles/signupStyle";
+import SideInput from "../SideInput";
 
 const Layout = styled.div`
   display: flex;

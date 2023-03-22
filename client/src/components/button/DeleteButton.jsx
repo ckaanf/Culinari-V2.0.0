@@ -1,4 +1,4 @@
-import { ReactComponent as DeleteIcon } from "../assets/delete-icon.svg";
+import { ReactComponent as DeleteIcon } from "../../assets/delete-icon.svg";
 
 function DeleteButton() {
   return (

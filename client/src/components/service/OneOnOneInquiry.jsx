@@ -1,6 +1,6 @@
 import styled from "styled-components";
 import BasicInput from "../BasicInput";
-import BasicButton from "../BasicButton";
+import BasicButton from "../button/BasicButton";
 import { BsTextarea } from "react-icons/bs";
 import { useState } from "react";
 import axios from "axios";

@@ -1,7 +1,7 @@
 import { useState } from "react";
 import styled from "styled-components";
 
-import DeleteButton from "../../../components/DeleteButton";
+import DeleteButton from "../../../components/button/DeleteButton";
 import { ReactComponent as Star } from "../../../assets/star.svg";
 
 const Header = styled.header`

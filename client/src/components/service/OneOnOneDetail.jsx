@@ -3,7 +3,7 @@ import { useEffect } from "react";
 import { useState } from "react";
 import { useNavigate, useParams } from "react-router-dom";
 
-import BasicButton from "../BasicButton";
+import BasicButton from "../button/BasicButton";
 import { DetailContainer, DetailBar, ContentBox, Page } from "../../styles/OneOnOneStyle";
 import Answer from "../answer";
 

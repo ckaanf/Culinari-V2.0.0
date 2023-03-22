@@ -39,9 +39,9 @@ function Mypagehead({
   children,title,subtitle,icon,
   line,filltap,side_title,width,tab
 }) {
-  const styels = {line, filltap,width}
+  const styles = {line, filltap,width}
   return (
-    <Layout {...styels}>
+    <Layout {...styles}>
       <div className="container">
         <div className="simple">
           {icon !== null ? <div className="icons">{icon}</div> : null}
@@ -64,9 +64,6 @@ Mypagehead.defaultProps = {
     side_title:null,
     line: false,
     filltap: false,
-
-
-
 }
 
 export default Mypagehead;

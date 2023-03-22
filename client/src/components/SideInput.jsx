@@ -46,7 +46,7 @@ function SideInput({
   padding_b,
   label,
 }) {
-  const styels = {
+  const styles = {
     flex_d,
     mark,
     padding,
@@ -54,7 +54,7 @@ function SideInput({
   };
 
   return (
-    <Layout {...styels}>
+    <Layout {...styles}>
       <div className="sideInput_text">
         <label htmlFor="simple">
           {label}

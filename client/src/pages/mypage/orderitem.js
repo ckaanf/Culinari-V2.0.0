@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import ListLayout from "../../components/ListLayout";
 import Mypagehead from "../../components/MypageHead";
-import BasicButton from "../../components/BasicButton";
+import BasicButton from "../../components/button/BasicButton";
 import Guidance from "../../components/Guidance";
 import { useState, useEffect } from "react";
 import { OtherPagination } from "../../components/OtherPagination";

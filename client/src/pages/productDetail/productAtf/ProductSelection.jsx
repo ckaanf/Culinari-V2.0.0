@@ -2,7 +2,7 @@ import axios from "axios";
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
 
-import ColorButton from "../../../components/ColorButton";
+import ColorButton from "../../../components/button/ColorButton";
 import QuantityBox from "../../../components/QuantityBox";
 
 const HeaderContainer = styled.div`

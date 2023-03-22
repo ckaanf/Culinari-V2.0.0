@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import styled from "styled-components";
-import BasicButton from "../BasicButton";
+import BasicButton from "../button/BasicButton";
 
 const Page = styled.div`
   max-width: 900px;

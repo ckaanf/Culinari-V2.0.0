@@ -2,7 +2,7 @@ import styled from "styled-components";
 import Mypagehead from "../../components/MypageHead";
 import ListLayout from "../../components/ListLayout";
 import ProductItem from "../../components/ProductItem";
-import BasicButton from "../../components/BasicButton";
+import BasicButton from "../../components/button/BasicButton";
 import { useEffect, useState} from "react";
 import CountBox from "../../components/CountBox";
 import axios from "axios";

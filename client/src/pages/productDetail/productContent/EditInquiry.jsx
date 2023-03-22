@@ -1,9 +1,9 @@
 import axios from "axios";
 import { useState } from "react";
 import styled from "styled-components";
-import BasicButton from "../../../components/BasicButton";
+import BasicButton from "../../../components/button/BasicButton";
 
-import DeleteButton from "../../../components/DeleteButton";
+import DeleteButton from "../../../components/button/DeleteButton";
 
 const Container = styled.div`
   display: flex;

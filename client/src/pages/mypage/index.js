@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import styled from "styled-components";
 import { GoChevronRight } from "react-icons/go";
-import BasicButton from "../../components/BasicButton";
+import BasicButton from "../../components/button/BasicButton";
 import Tab from "../../components/Tab";
 import Userinfo from "./userinfo";
 import DeliverySet from "./deliverySet";

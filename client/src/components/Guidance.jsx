@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import BasicButton from "../components/BasicButton";
+import BasicButton from "./button/BasicButton";
 
 const Layout = styled.div`
   background-color: rgba(0, 0, 0, 0.1);

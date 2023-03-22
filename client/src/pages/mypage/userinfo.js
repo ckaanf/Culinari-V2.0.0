@@ -7,7 +7,7 @@ import Mypagehead from "../../components/MypageHead";
 import BasicInput from "../../components/BasicInput";
 import ModalContainer from "../../components/signup/ModalCotainer";
 import GenderRadio from "../../components/signup/GenderRadio";
-import BasicButton from "../../components/BasicButton";
+import BasicButton from "../../components/button/BasicButton";
 import Guidance from "../../components/Guidance";
 
 // id2

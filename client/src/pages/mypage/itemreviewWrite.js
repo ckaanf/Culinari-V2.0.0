@@ -1,6 +1,6 @@
 import Mypagehead from "../../components/MypageHead";
 import styled from "styled-components";
-import BasicButton from "../../components/BasicButton";
+import BasicButton from "../../components/button/BasicButton";
 import { ReviewStar } from "../../components/ReviewStar";
 import { useState } from "react";
 import axios from "axios";
