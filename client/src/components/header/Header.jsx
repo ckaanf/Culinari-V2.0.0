@@ -4,7 +4,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 import { BsFillPersonFill, BsCart4, BsList, BsSearch } from "react-icons/bs";
-import logo from "../../assets/fitlogo.png";
+import logo from "../../assets/logo.svg";
 
 const Layout = styled.div`
   width: 100%;
@@ -30,7 +30,7 @@ const Layout = styled.div`
     .logo {
       margin-right: 10px;
       img {
-        width: 100px;
+        width: 140px;
         margin-left: -70px;
       }
     }
