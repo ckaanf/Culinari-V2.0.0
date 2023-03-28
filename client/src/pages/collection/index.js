@@ -22,8 +22,8 @@ const PageHeader = styled.h3`
 `;
 
 const Content = styled.div`
-  margin-top: 50px;
-  margin-bottom: 75px;
+  max-width: 1300px;
+  margin: 50px auto 75px auto;
   position: relative;
   display: flex;
 
