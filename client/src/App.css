@@ -21,6 +21,7 @@ body {
   height: 100%;
   display: flex;
   flex-direction: column;
+  justify-items: center;
 }
 
 #header {
@@ -28,8 +29,6 @@ body {
 }
 
 #main {
-  width: 1050px;
-  margin: 0 auto;
   flex: 1;
 }
 

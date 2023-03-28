@@ -1,16 +1,16 @@
 import axios from "axios";
 import { useEffect, useState } from "react";
 import styled from "styled-components";
-
 import MainBanner from "../components/MainBanner";
+
 import ProductItemSlider from "../components/ProductItemSlider";
 
 const Container = styled.div`
-  min-width: 1050px;
+  min-width: 1100px;
 `;
 
 export const TodayRecommendProducts = styled.div`
-  max-width: 1009px;
+  max-width: 1100px;
   margin: 40px auto;
 `;
 
@@ -53,9 +53,9 @@ export function Main() {
   }, []);
 
   return (
-    <Container>
+    <>
       <MainBanner />
-
+      <Container>
       <TodayRecommendProducts>
         <Title>이달의 추천 상품</Title>
         <ProductItemSlider data={bestProductData && bestProductData.data} />
@@ -66,5 +66,7 @@ export function Main() {
         <ProductItemSlider data={newProductData && newProductData.data} />
       </TodayRecommendProducts>
     </Container>
+    </>
+    
   );
 }

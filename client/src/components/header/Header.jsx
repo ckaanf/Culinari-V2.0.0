@@ -8,8 +8,7 @@ import logo from "../../assets/logo.svg";
 
 const Layout = styled.div`
   width: 100%;
-  margin: 0 auto;
-  height: 158px;
+  margin: 5px auto;
 
   .flex {
     display: flex;
