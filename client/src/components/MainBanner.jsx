@@ -10,6 +10,8 @@ import "swiper/css/navigation";
 
 import { Autoplay, Pagination, Navigation } from "swiper";
 
+import './MySwiper.css';
+
 import bannerImage1 from "../assets/banner-image1.jpg";
 import bannerImage2 from "../assets/banner-image2.jpg";
 import bannerImage3 from "../assets/banner-image3.jpg";

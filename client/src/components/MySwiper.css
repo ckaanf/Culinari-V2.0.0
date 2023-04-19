@@ -1,0 +1,25 @@
+.swiper-button-next, .swiper-button-prev{
+    color : gray;
+  }
+
+  .swiper-pagination{
+    text-align: right;
+    padding-right: 50px;
+  }
+
+  .mySwiper_productItem .swiper-button-next, .mySwiper_productItem .swiper-button-prev{
+    color : rgb(110, 110, 110);
+    background-color: white;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    top: 40%;
+    box-shadow: 0px 0px 3px 0px rgba(0,0,0,0.75);
+    opacity: 0.8;
+  }
+
+  .mySwiper_productItem .swiper-button-next::after, .mySwiper_productItem .swiper-button-prev::after{
+    font-size: 35px;
+  }
+

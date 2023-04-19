@@ -12,16 +12,16 @@ function ProductItemSlider({ data }) {
 	return (
 		<Swiper
 			slidesPerView={5}
-			spaceBetween={10}
-      slidesPerGroup={5}
+			spaceBetween={-10}
+			slidesPerGroup={5}
 			pagination={{
 				clickable: true,
 			}}
-      speed={700}
-      navigation={true}
-      loop={true}
+			speed={700}
+			navigation={true}
+			loop={true}
 			modules={[Navigation]}
-			className="mySwiper"
+			className="mySwiper_productItem"
 		>
 			{data &&
 				data.map((element) => (
