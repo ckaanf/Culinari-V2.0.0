@@ -16,10 +16,12 @@ const Container = styled.div`
 	font-weight: 500;
 
 	.product_list {
+		margin-top : 10px;
 		width: 100%;
 		display: grid;
 		grid-template-columns: repeat(auto-fill, 195px);
 		gap: 31px 18px;
+		justify-content: center;
 	}
 
 	.product_list_header {
@@ -33,6 +35,18 @@ const Container = styled.div`
 		display: flex;
 		align-items: center;
 		user-select: none;
+
+		li::before {
+			content: "";
+			width: 1px;
+			height: 10px;
+			margin-right: 8px;
+			background-color: rgb(226, 226, 226);
+		}
+
+		li:first-child:before {
+			background-color: transparent;
+		}
 	}
 `;
 
@@ -46,7 +60,7 @@ const PageHeader = styled.h3`
 	text-align: center;
 
 	.search_keyword {
-		color: #783CB7;
+		color: #783cb7;
 	}
 
 	.category_details {
@@ -74,7 +88,7 @@ const CategoryList = styled.li`
 		font-weight: ${({ datacode, code }) => (datacode === code ? 700 : 400)};
 
 		&:hover {
-			color: #783CB7;
+			color: #783cb7;
 			font-weight: 700;
 		}
 	}

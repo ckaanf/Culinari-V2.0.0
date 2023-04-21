@@ -4,10 +4,10 @@ const Item = styled.div`
   margin: 0 auto;
   padding: 10px;
   font-size: 14px;
-  width: 200px;
+  width: 220px;
 
   .image_wrapper {
-    width: 180px;
+    width: 200px;
     height: 230px;
     overflow: hidden;
     margin-bottom: 6px;
@@ -32,7 +32,7 @@ const Item = styled.div`
   }
 
   .info{
-    width: 180px;
+    width: 200px;
   }
 
   img {
