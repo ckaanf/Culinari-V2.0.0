@@ -9,7 +9,7 @@ import mypagebtn from "../../assets/mypage-icon.svg";
 
 const Layout = styled.div`
   width: 100%;
-  margin: 5px auto;
+  margin: 5px auto 0;
 
   .flex {
     display: flex;
@@ -18,13 +18,24 @@ const Layout = styled.div`
   }
 
   .top {
-    padding: 7px 10px;
+    padding: 7px 30px;
     gap: 15px;
     justify-content: flex-end;
+
+    >div>a{
+      color : #333333;
+    }
+
+    >div{
+      font-size: 15px;
+    }
+
+    >div>a:hover{
+      color : #543277;
+    }
   }
 
   .mid {
-
     .logo {
       margin-right: 10px;
       img {
@@ -55,9 +66,9 @@ const Layout = styled.div`
       }
     }
 
-    .serach {
+    .search {
       display: flex;
-      border: 1px solid #543277;
+      border: 2px solid #543277;
       width: 500px;
       height: 48px;
       border-radius: 10px;
@@ -66,25 +77,25 @@ const Layout = styled.div`
       margin: 0 10px;
 
       input {
-        flex: 5;
+        flex: 7;
         border: none;
         margin-left: 10px;
       }
 
       button {
         flex: 1;
-        font-size: 20px;
+        display: flex;
+        justify-content:center;
+        font-size: 23px;
         color: #543277;
       }
     }
   }
 
   .bottom {
-    // border-bottom: 1px solid #a9a9a9;
     box-shadow: 0 3px 4px 0 rgb(0 0 0 / 7%);
-
     margin-top: 20px;
-
+    
     .GNB {
       width: 1050px;
       margin: 0 auto;
@@ -124,6 +135,12 @@ const Layout = styled.div`
           align-items: center;
           cursor: pointer;
 
+          .category_icon{
+            position : relative;
+            top : 1px;
+            margin-right: 3px;
+          }
+
           &:hover .category {
             color: #783CB7;
           }
@@ -137,7 +154,7 @@ const Layout = styled.div`
             min-height: 200px;
             position: absolute;
             display: flex;
-            top: 146px;
+            top: 140px;
             padding-top: 10px;
             display: none;
 
@@ -274,7 +291,7 @@ function Header() {
               로그아웃
             </a>
           ) : (
-            <a href="/login">로그인 / 회원가입</a>
+            <a href="/login">로그인/회원가입</a>
           )}
         </div>
 
@@ -288,7 +305,7 @@ function Header() {
             <img src={logo} alt="logo"></img>
           </a>
         </div>
-        <form className="serach" onSubmit={handleSearchProductSubmit}>
+        <form className="search" onSubmit={handleSearchProductSubmit}>
           <input placeholder="검색어를 입력해주세요" onChange={({ target }) => setSearchText(target.value)}></input>
           <button>
             <BsSearch />
@@ -311,7 +328,7 @@ function Header() {
         <div className="GNB">
           <ul>
             <li className="category_container">
-              <span className="category">
+              <span className="category category_icon">
                 <BsList size="25" />
               </span>
               <span className="category">카테고리</span>
