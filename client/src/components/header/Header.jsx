@@ -3,8 +3,9 @@ import styled from "styled-components";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-import { BsFillPersonFill, BsCart4, BsList, BsSearch } from "react-icons/bs";
+import { BsCart4, BsList, BsSearch } from "react-icons/bs";
 import logo from "../../assets/logo.svg";
+import mypagebtn from "../../assets/mypage-icon.svg";
 
 const Layout = styled.div`
   width: 100%;
@@ -33,7 +34,7 @@ const Layout = styled.div`
     }
 
     .myIcons {
-      gap: 10px;
+      gap: 5px;
     }
 
     .icons {
@@ -44,6 +45,13 @@ const Layout = styled.div`
       .icon {
         font-size: 30px;
         margin-bottom: 2px;
+        color: #2D0D49;
+      }
+
+      .img_icon{
+        width : 45px;
+        height: 45px;
+        shape-rendering: auto;
       }
     }
 
@@ -289,7 +297,7 @@ function Header() {
         <div className="myIcons flex">
           <div className="icons">
             <a href="/mypage/userInfo">
-              <BsFillPersonFill className="icon" />
+              <img src={mypagebtn} alt="마이페이지 버튼" className="img_icon" />
             </a>
           </div>
           <div className="icons">
