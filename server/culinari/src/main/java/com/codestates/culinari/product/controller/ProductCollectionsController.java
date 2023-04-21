@@ -1,6 +1,7 @@
 package com.codestates.culinari.product.controller;
 
 import com.codestates.culinari.config.security.dto.CustomPrincipal;
+import com.codestates.culinari.global.aop.ExeTimer;
 import com.codestates.culinari.pagination.PageResponseDto;
 import com.codestates.culinari.pagination.service.PaginationService;
 import com.codestates.culinari.product.dto.response.ProductResponseToPage;
@@ -33,6 +34,7 @@ public class ProductCollectionsController {
     private final ProductService productService;
     private final PaginationService paginationService;
 
+    @ExeTimer
     @GetMapping("/newproduct")
     public ResponseEntity getNewestProducts(
             @RequestParam(required = false , value = "sorted_type") String sortedType,
