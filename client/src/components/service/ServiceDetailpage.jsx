@@ -18,7 +18,6 @@ const DetailContainer = styled.div`
 `;
 const DetailBar = styled.div`
   width: 100%;
-  background-color: #ffdede;
   font-size: 15px;
   margin-top: 15px;
   display: flex;

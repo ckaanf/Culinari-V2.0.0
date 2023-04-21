@@ -6,7 +6,7 @@ const Container = styled.div`
   width: 88px;
   display: flex;
   align-items: center;
-  border: 1px solid #fd6c40;
+  border: 1px solid #783CB7;
   border-radius: 3px;
 `;
 
@@ -37,11 +37,11 @@ function QuantityBox({ quantity, setQuantity }) {
   return (
     <Container>
       <Button onClick={handleDecrease}>
-        <MinusIcon fill={quantity === 1 ? "#DDD" : "#fd6c40"} />
+        <MinusIcon fill={quantity === 1 ? "#DDD" : "#783CB7"} />
       </Button>
       <Quantity>{quantity}</Quantity>
       <Button onClick={handleIncrease}>
-        <PlusIcon fill={"#fd6c40"} />
+        <PlusIcon fill={"#783CB7"} />
       </Button>
     </Container>
   );

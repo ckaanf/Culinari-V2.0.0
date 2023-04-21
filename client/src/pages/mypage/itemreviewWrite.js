@@ -57,7 +57,7 @@ const Layout = styled.div`
       }
 
       span {
-        color: #ff6767;
+        color: #783CB7;
         font-size: 12px;
       }
     }

@@ -8,10 +8,9 @@ const Container = styled.div`
     display:flex;
     justify-content: center;
     align-items: center;
-    background-color: #FFF7F5;
-    border: 1px solid #ff6767;
+    border: 1px solid #783CB7;
     border-radius: 12px;
-    color: #ff6767;
+    color: #783CB7;
     cursor: pointer;
     font-size: 12px;
     padding: 7px 12px 4px 12px;
@@ -45,7 +44,7 @@ const Container = styled.div`
 
   .active{
     color: white;
-    background-color: #FF6767;
+    background-color: #783CB7;
   }
 
   

@@ -55,7 +55,7 @@ const Section = styled.section`
   background-color: #fff;
   animation: modal-show 0.3s;
   overflow: hidden;
-  border: 1px solid #c26d53;
+  border: 1px solid #783CB7;
 `;
 
 const Main = styled.main`
@@ -76,7 +76,7 @@ const Footer = styled.footer`
     width: 50px;
     height: 30px;
     padding: 6px 12px;
-    border: 1px solid #c26d53;
+    border: 1px solid #783CB7;
     border-radius: 5px;
     font-size: 13px;
   }

@@ -70,10 +70,10 @@ const LoginBtn = styled.button`
   background-color: #ffffff;
   padding: 10px;
   margin: 6px 0;
-  color: #c26d53;
+  color: #783CB7;
   box-shadow: rgba(255, 255, 255, 0.4) 0px 1px 0px 0px inset;
   border-radius: 3px;
-  outline: 1px solid #c26d53;
+  outline: 1px solid #783CB7;
   margin: 5px 0px;
   height: 50px;
 `;

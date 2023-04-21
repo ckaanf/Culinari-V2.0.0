@@ -30,7 +30,7 @@ const Classlist = styled.div`
       padding-bottom: 15px;
       font-size: 15px;
       span {
-        color: #ff6767;
+        color: #783CB7;
         padding-right: 5px;
       }
     }

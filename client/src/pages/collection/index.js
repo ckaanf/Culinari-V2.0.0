@@ -37,7 +37,7 @@ const Content = styled.div`
     border-top: 1px solid #ddd;
     border-bottom: 1px solid #ddd;
     overflow: hidden scroll;
-    background-color: #fff7f5;
+    // background-color: #fff7f5;
 
     .category_title {
       margin: 10px 10px 20px 10px;
@@ -92,7 +92,7 @@ const FilterList = styled.li.attrs(({ dataId }) => ({
   color: rgb(153, 153, 153);
   cursor: pointer;
 
-  color: ${({ dataId, sort }) => (dataId === sort ? "#ff6767" : "rgb(153, 153, 153)")};
+  color: ${({ dataId, sort }) => (dataId === sort ? "#783CB7" : "rgb(153, 153, 153)")};
 `;
 
 const ProductNoneImageWrapper = styled.div`

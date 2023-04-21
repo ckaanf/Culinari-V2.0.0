@@ -20,11 +20,9 @@ const Layout = styled.div`
     padding: 7px 10px;
     gap: 15px;
     justify-content: flex-end;
-    background-color: #ffc3b1;
   }
 
   .mid {
-    margin-top: 20px;
 
     .logo {
       margin-right: 10px;
@@ -51,7 +49,7 @@ const Layout = styled.div`
 
     .serach {
       display: flex;
-      border: 1px solid #ffc3b1;
+      border: 1px solid #543277;
       width: 500px;
       height: 48px;
       border-radius: 10px;
@@ -68,7 +66,7 @@ const Layout = styled.div`
       button {
         flex: 1;
         font-size: 20px;
-        color: #ffc3b1;
+        color: #543277;
       }
     }
   }
@@ -95,20 +93,20 @@ const Layout = styled.div`
           padding: 5px 5px 5px 0;
 
           .home {
-            color: ${({ pathname }) => (pathname === "/" ? "#ff6767" : null)};
+            color: ${({ pathname }) => (pathname === "/" ? "#783CB7" : null)};
           }
 
           .new_product {
-            color: ${({ pathname }) => (pathname.includes("/newproduct") ? "#ff6767" : null)};
+            color: ${({ pathname }) => (pathname.includes("/newproduct") ? "#783CB7" : null)};
           }
 
           .best_products {
-            color: ${({ pathname }) => (pathname.includes("/bestproducts") ? "#ff6767" : null)};
+            color: ${({ pathname }) => (pathname.includes("/bestproducts") ? "#783CB7" : null)};
           }
 
           span {
             &:hover {
-              color: #ff6767;
+              color: #783CB7;
             }
           }
         }
@@ -119,7 +117,7 @@ const Layout = styled.div`
           cursor: pointer;
 
           &:hover .category {
-            color: #ff6767;
+            color: #783CB7;
           }
 
           &:hover .drop_down_container {
@@ -171,7 +169,7 @@ const Layout = styled.div`
                 }
 
                 &:hover a {
-                  color: #ff6767;
+                  color: #783CB7;
                   background-color: #f1f3f5;
                 }
               }
@@ -184,7 +182,7 @@ const Layout = styled.div`
 `;
 
 const CategoryList = styled.li`
-  color: ${({ ishover }) => (ishover ? "#ff6767" : null)};
+  color: ${({ ishover }) => (ishover ? "#783CB7" : null)};
   background-color: ${({ ishover }) => (ishover ? "#f1f3f5" : null)};
 
   a {
@@ -192,7 +190,7 @@ const CategoryList = styled.li`
     width: 100%;
     height: 100%;
     display: block;
-    color: ${({ ishover }) => (ishover ? "#ff6767" : null)};
+    color: ${({ ishover }) => (ishover ? "#783CB7" : null)};
   }
 `;
 

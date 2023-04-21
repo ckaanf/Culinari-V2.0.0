@@ -143,7 +143,7 @@ function ReviewModal({ setModalOpen, srcArr, content, modifiedBy, modifiedAt, re
               .fill(null)
               .map((_, index) => index < reviewStar)
               .map((point) =>
-                point ? <Star width="20px" fill="#ff6767" key={Math.random()} /> : <Star width="20px" fill="#ddd" key={Math.random()} />
+                point ? <Star width="20px" fill="#783CB7" key={Math.random()} /> : <Star width="20px" fill="#ddd" key={Math.random()} />
               )}
             <p className="content">{content}</p>
             <footer className="footer">

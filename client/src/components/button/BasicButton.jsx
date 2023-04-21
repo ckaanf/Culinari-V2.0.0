@@ -19,9 +19,9 @@ BasicButton.defaultProps = {
 }
 
 const Colbtn = styled.a`
-    background-color: ${props => props.disabled ? "rgba(128, 128, 128, 0.597)" : "#FFF7F5"};
-    color: ${props => props.disabled ? "white" : "#ff6767"};
-    border: 1px solid ${props => props.disabled ? "rgba(0, 0, 0, 0.491)" : "#ff6767"};
+    background-color: ${props => props.disabled ? "rgba(128, 128, 128, 0.597)" : "white"};
+    color: ${props => props.disabled ? "white" : "#783CB7"};
+    border: 1px solid ${props => props.disabled ? "rgba(0, 0, 0, 0.491)" : "#783CB7"};
     cursor: pointer;
     ${props => props.disabled ? "pointer-events: none;" : null}
     vertical-align: middle;

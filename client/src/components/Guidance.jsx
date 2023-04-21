@@ -12,18 +12,17 @@ const Layout = styled.div`
   right: 0;
   bottom: 0;
   left: 0;
-  color: #ff6767;
+  color: #783CB7;
 
   .container {
     margin:0;
     padding: 10px;
-    border: 1px solid #ff6767;
+    border: 1px solid #783CB7;
     display:flex;
     flex-direction:  column;
     align-items:center;
     justify-content: space-around;
     font-size: 15px;
-    background-color: #FFF7F5;
     border-radius: 5px;
     height: 100px;
 
@@ -36,9 +35,6 @@ const Layout = styled.div`
 `;
 
 function Guidance({ text, close, ok}) {
-  
-  
-  
   return (
     <Layout>
       <div className="container">

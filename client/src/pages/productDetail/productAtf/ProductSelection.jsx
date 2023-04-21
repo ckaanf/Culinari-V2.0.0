@@ -99,7 +99,7 @@ const HeaderContainer = styled.div`
     width: 300px;
     margin-left: 10px;
     padding: 10px;
-    border: 1px solid #fd6c40;
+    border: 1px solid #783CB7;
 
     position: sticky;
     top: 10px;

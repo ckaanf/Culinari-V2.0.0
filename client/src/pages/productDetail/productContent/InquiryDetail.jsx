@@ -32,7 +32,7 @@ const InquiryContainer = styled.tr`
       color: #8f8f8f;
 
       &:hover {
-        color: #ff6767;
+        color: #783CB7;
       }
     }
   }

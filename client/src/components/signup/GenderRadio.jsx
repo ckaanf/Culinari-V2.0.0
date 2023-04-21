@@ -75,7 +75,7 @@ const RadioButton = styled.input`
     props.checked &&
     ` 
     &:checked + ${RadioButtonLabel} {
-      background: #C26D53;
+      background: #783CB7;
       
     }
   `}

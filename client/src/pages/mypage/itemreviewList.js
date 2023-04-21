@@ -19,11 +19,11 @@ const TapLayout = styled.div`
   }
 
   .first {
-    color: ${(props) => (props.state ? "#FF6767" : "#7D7D7D")};
+    color: ${(props) => (props.state ? "#783CB7" : "#7D7D7D")};
   }
 
   .second {
-    color: ${(props) => (props.state ? "#7D7D7D" : "#FF6767")};
+    color: ${(props) => (props.state ? "#7D7D7D" : "#783CB7")};
   }
 `;
 

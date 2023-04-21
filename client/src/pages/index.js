@@ -18,7 +18,7 @@ export const Title = styled.div`
   font-weight: 700;
   font-size: 16px;
   line-height: 23px;
-  color: #fd6c40;
+  color: #783CB7;
   padding: 10px;
 `;
 

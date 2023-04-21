@@ -21,7 +21,7 @@ const Layout = styled.div`
   }
 
   .subtitle{
-    color:#C26D53;
+    color:#783CB7;
     font-size:12px;
     margin-left: 10px;
   }

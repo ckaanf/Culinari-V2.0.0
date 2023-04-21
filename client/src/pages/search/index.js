@@ -46,7 +46,7 @@ const PageHeader = styled.h3`
 	text-align: center;
 
 	.search_keyword {
-		color: #ff6767;
+		color: #783CB7;
 	}
 
 	.category_details {
@@ -70,11 +70,11 @@ const CategoryList = styled.li`
 
 	a {
 		color: ${({ datacode, code }) =>
-			datacode === code ? "#ff6767" : "black"};
+			datacode === code ? "#783CB7" : "black"};
 		font-weight: ${({ datacode, code }) => (datacode === code ? 700 : 400)};
 
 		&:hover {
-			color: #ff6767;
+			color: #783CB7;
 			font-weight: 700;
 		}
 	}
@@ -92,7 +92,7 @@ const FilterList = styled.li.attrs(({ dataId }) => ({
 	cursor: pointer;
 
 	color: ${({ dataId, sort }) =>
-		dataId === sort ? "#ff6767" : "rgb(153, 153, 153)"};
+		dataId === sort ? "#783CB7" : "rgb(153, 153, 153)"};
 `;
 
 const ProductNoneImageWrapper = styled.div`

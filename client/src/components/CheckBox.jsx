@@ -10,12 +10,12 @@ const Label = styled.label`
     height: ${({ size }) => size};
 
     g {
-      fill: ${({ isChecked }) => (isChecked ? "#fd6c40" : "none")};
+      fill: ${({ isChecked }) => (isChecked ? "#783CB7" : "none")};
       stroke: ${({ isChecked }) => (isChecked ? "#ffffff" : "#DDD")};
     }
 
     circle {
-      stroke: ${({ isChecked }) => (isChecked ? "#fd6c40" : "#DDD")};
+      stroke: ${({ isChecked }) => (isChecked ? "#783CB7" : "#DDD")};
     }
   }
 `;

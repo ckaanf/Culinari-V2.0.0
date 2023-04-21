@@ -93,9 +93,9 @@ const ButtonWrapper = styled.div`
 
   a {
     background-color: #ffffff;
-    color: #c26d53;
+    color: #783CB7;
     border-radius: 3px;
-    outline: 1px solid #c26d53;
+    outline: 1px solid #783CB7;
   }
 `;
 
@@ -147,7 +147,7 @@ const ModalText = styled.div`
 `;
 
 const CloseButton = styled.button`
-  background-color: #ff7f7f;
+  background-color: #783CB7;
   color: white;
   font-size: 16px;
   padding: 8px 20px;

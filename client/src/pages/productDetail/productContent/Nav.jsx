@@ -43,7 +43,7 @@ const Container = styled.nav`
 
   .active {
     background-color: #ffffff;
-    color: #ff6767;
+    color: #783CB7;
   }
 `;
 
