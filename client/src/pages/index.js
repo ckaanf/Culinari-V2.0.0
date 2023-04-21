@@ -16,10 +16,9 @@ export const TodayRecommendProducts = styled.div`
 
 export const Title = styled.div`
   font-weight: 700;
-  font-size: 16px;
-  line-height: 23px;
-  color: #783CB7;
-  padding: 10px;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
 `;
 
 export function Main() {
