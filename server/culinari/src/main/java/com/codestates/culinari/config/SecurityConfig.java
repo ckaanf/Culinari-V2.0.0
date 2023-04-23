@@ -115,7 +115,7 @@ public class SecurityConfig {
                         "http://localhost:8080",
                         "http://localhost:3000",
                         "https://localhost:3000",
-                "http://culinaribuild.s3-website.ap-northeast-2.amazonaws.com"
+                "http://culinari.s3-website.ap-northeast-2.amazonaws.com/"
                 )
         ); // * 은 문제 발생
         configuration.setAllowedMethods(Arrays.asList("GET", "POST", "PATCH", "DELETE", "UPDATE"));

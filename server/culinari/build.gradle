@@ -57,6 +57,9 @@ dependencies {
 	runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.11.5'
 	runtimeOnly	'io.jsonwebtoken:jjwt-jackson:0.11.5'
 
+	//aws log cloudwatch
+	implementation "ca.pjer:logback-awslogs-appender:1.6.0"
+
 	//파라미티
 	implementation group: 'io.awspring.cloud', name: 'spring-cloud-aws-parameter-store-config', version: '2.4.2'
 	dependencyManagement {
