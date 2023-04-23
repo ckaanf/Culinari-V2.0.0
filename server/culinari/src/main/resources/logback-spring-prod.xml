@@ -1,16 +1,12 @@
 <included>
     <property resource="logback-variables.properties"/>
+    <springProperty name="AWS_ACCESS_KEY" source="cloud.aws.credentials.access-key"/>
+    <springProperty name="AWS_SECRET_KEY" source="cloud.aws.credentials.secret-key"/>
 
-    <appender name="REQUEST1" class="ch.qos.logback.core.rolling.RollingFileAppender">
-        <file>${log.dir}/request1.log</file>
-        <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
-            <fileNamePattern>${log.dir}/archive/request1.%d{yyyy-MM-dd}_%i.log</fileNamePattern>
-            <maxFileSize>1KB</maxFileSize>
-            <maxHistory>30</maxHistory>  <!-- 로그 파일 최대 보관 주기 (단위 : d) -->
-        </rollingPolicy>
+    <appender name="CONSOLE1" class="ch.qos.logback.core.ConsoleAppender">
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
             <pattern>
-                [REQUEST1] ${log.pattern}
+                [CONSOLE1] ${log.pattern}
             </pattern>
             <outputPatternAsHeader>true</outputPatternAsHeader>
         </encoder>
@@ -31,12 +27,12 @@
         </encoder>
     </appender>
 
-    <appender name="MDC" class="ch.qos.logback.core.rolling.RollingFileAppender">
+<!--    <appender name="MDC" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${log.dir}/mdc.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.SizeAndTimeBasedRollingPolicy">
             <fileNamePattern>${log.dir}/archive/mdc.%d{yyyy-MM-dd}_%i.log</fileNamePattern>
             <maxFileSize>10KB</maxFileSize>
-            <maxHistory>30</maxHistory>  <!-- 로그 파일 최대 보관 주기 (단위 : d) -->
+            <maxHistory>30</maxHistory>  &lt;!&ndash; 로그 파일 최대 보관 주기 (단위 : d) &ndash;&gt;
         </rollingPolicy>
         <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
             <pattern>
@@ -44,7 +40,7 @@
             </pattern>
             <outputPatternAsHeader>true</outputPatternAsHeader>
         </encoder>
-    </appender>
+    </appender>-->
 
     <appender name="ERROR" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <file>${log.dir}/error.log</file>
@@ -86,10 +82,33 @@
         </encoder>
     </appender>
 
+    <appender name="aws_cloud_watch_log" class="ca.pjer.logback.AwsLogsAppender">
+        <filter class="ch.qos.logback.classic.filter.LevelFilter">
+            <level>error</level>
+            <onMatch>ACCEPT</onMatch>
+            <onMismatch>DENY</onMismatch>
+        </filter>
+        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+            <pattern>
+                [ERROR] ${log.pattern}
+            </pattern>
+            <outputPatternAsHeader>true</outputPatternAsHeader>
+        </encoder>
+        <logGroupName>culinari</logGroupName>
+        <logRegion>ap-northeast-2</logRegion>
+        <maxBatchLogEvents>50</maxBatchLogEvents>
+        <maxFlushTimeMillis>30000</maxFlushTimeMillis>
+        <maxBlockTimeMillis>5000</maxBlockTimeMillis>
+        <rententionTimeDays>0</rententionTimeDays>
+        <accessKeyId>${AWS_ACCESS_KEY}</accessKeyId>
+        <secretAccessKey>${AWS_SECRET_KEY}</secretAccessKey>
+    </appender>
+
     <root level="INFO">
-<!--        <appender-ref ref="REQUEST1"/>-->
+        <appender-ref ref="CONSOLE1"/>
 <!--        <appender-ref ref="REQUEST2"/>-->
         <appender-ref ref="WARN"/>
         <appender-ref ref="ERROR"/>
+        <appender-ref ref="aws_cloud_watch_log"/>
     </root>
 </included>
