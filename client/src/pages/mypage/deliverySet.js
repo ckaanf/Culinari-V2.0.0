@@ -29,6 +29,8 @@ const Classlist = styled.div`
     .list_in_top {
       padding-bottom: 15px;
       font-size: 15px;
+      display : flex;
+      align-items: center;
       span {
         color: #783CB7;
         padding-right: 5px;
@@ -159,7 +161,7 @@ function Addressset() {
                 <div className="list_in_top">
                   <span>{`${user.destinationName}`}</span>
                   {user.defaultSelect === true ? (
-                    <BasicButton radius={"5"} p_width={"10"} p_height={"1"}>
+                    <BasicButton radius={"5"} p_width={"40"} p_height={"25"} font={15}>
                       {"기본"}
                     </BasicButton>
                   ) : null}
@@ -172,8 +174,8 @@ function Addressset() {
               </div>
               <div className="list_button">
                 <BasicButton
-                  p_width={"15"}
-                  p_height={"5"}
+                  p_width={"60"}
+                  p_height={"30"}
                   onClick={() => isOpen(user.id, "isfetch")}
                 >
                   수정
@@ -186,8 +188,8 @@ function Addressset() {
                 ) : null}
 
                 <BasicButton
-                  p_width={"15"}
-                  p_height={"5"}
+                  p_width={"60"}
+                  p_height={"30"}
                   onClick={() => isOpen(user.id, "isdelete")}
                 >
                   삭제

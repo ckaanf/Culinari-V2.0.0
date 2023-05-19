@@ -141,7 +141,7 @@ function Pay() {
       )}
 
       <ButtonWrapper onClick={handlePayBtnClick}>
-        <BasicButton children={"결제하기"} font={"20"} radius={"5"} p_height={"14"} p_width={"150"} />
+        <BasicButton children={"결제하기"} font={"20"} radius={"5"} p_height={"45"} p_width={"150"} />
       </ButtonWrapper>
     </Container>
   );

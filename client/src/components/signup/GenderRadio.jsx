@@ -45,6 +45,7 @@ const Item = styled.div`
   align-items: center;
   height: 48px;
   position: relative;
+  margin-right : 6px;
 `;
 
 const RadioButtonLabel = styled.label`
@@ -66,7 +67,6 @@ const RadioButton = styled.input`
   border-radius: 50%;
   width: 24px;
   height: 24px;
-  margin-right: 6px;
 
   &:hover ~ ${RadioButtonLabel} {
     background: #bebebe;

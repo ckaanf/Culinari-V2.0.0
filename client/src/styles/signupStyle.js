@@ -86,9 +86,7 @@ const ButtonWrapper = styled.div`
   display: flex;
   justify-content: center;
   gap: 8px;
-  border-top: 1px solid rgb(244, 244, 244);
   text-align: center;
-  padding-top: 20px;
   margin-top: 20px;
 
   a {

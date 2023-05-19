@@ -134,7 +134,7 @@ function Inquiry({ data }) {
         )}
         <Pagination pageInfo={inquiryData.pageInfo} currentPage={currentPage} setCurrentPage={setCurrentPage} scrollTop={false} />
         <WriteInquiryButtonWrapper>
-          <BasicButton children={"문의하기"} p_width={15} p_height={10} onClick={() => setIsOpen(true)} />
+          <BasicButton children={"문의하기"} p_width={100} p_height={40} onClick={() => setIsOpen(true)} />
         </WriteInquiryButtonWrapper>
         {isOpen ? (
           <ModalComponent

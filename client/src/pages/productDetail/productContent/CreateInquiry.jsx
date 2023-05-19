@@ -231,7 +231,7 @@ function CreateInquiry({ id, imgUrl, name, setIsOpen }) {
       </InquiryContent>
 
       <ButtonWrapper isActive={isActive}>
-        <BasicButton children={"문의하기"} font={14} p_width={50} p_height={15} onClick={handleCreateInquiry} />
+        <BasicButton children={"문의하기"} font={14} p_width={130} p_height={40} onClick={handleCreateInquiry} />
       </ButtonWrapper>
     </Container>
   );

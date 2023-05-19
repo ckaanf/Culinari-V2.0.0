@@ -333,8 +333,8 @@ function SignForm() {
             children={"가입하기"}
             font={"20"}
             radius={"5"}
-            p_height={"14"}
-            p_width={"150"}
+            p_height={"60"}
+            p_width={"370"}
           />
         </ButtonWrapper>
       </IdBlock>

@@ -154,7 +154,7 @@ function Serachitem() {
                   <CountBox setState={setQuantity}/>
                 </div>
                 <div className="buttons">
-                  <BasicButton p_height={6} onClick={()=>cartKey(data.productId)}>장바구니 담기</BasicButton>
+                  <BasicButton p_height={40} onClick={()=>cartKey(data.productId)}>장바구니 담기</BasicButton>
                   {cartModal ? (
                       <Guidance
                         text={"해당 상품을 장바구니에 담으시겠습니까?"}

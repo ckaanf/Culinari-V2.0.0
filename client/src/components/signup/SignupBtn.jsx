@@ -10,7 +10,7 @@ const SignBtn = styled.button`
   display: inline-block;
   width: 100%;
   font-size: 20px;
-  line-height: 15px;
+  line-height: 60px;
   text-align: center;
   letter-spacing: center;
   background-color: #ffffff;
@@ -21,7 +21,6 @@ const SignBtn = styled.button`
   border-radius: 3px;
   outline: 1px solid #783CB7;
   margin: 10px 0px;
-  height: 59px;
 `;
 
 export default SignupBtn;

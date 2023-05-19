@@ -78,7 +78,7 @@ function OftenDetail({ Dummy }) {
         </ContentBox>
       </DetailContainer>
       <div className="btn_container" onClick={handleClickBtn}>
-        <BasicButton p_width={"20"} p_height={"7"}>
+        <BasicButton p_width={"100"} p_height={"40"}>
           목록으로{" "}
         </BasicButton>{" "}
       </div>

@@ -163,7 +163,7 @@ function Mypage() {
           <div className="acName">
             <span>{`${user.name} 님의 회원카드`}</span>
             <div>
-              <BasicButton href={"/mypage/userinfo"} radius={12}>
+              <BasicButton href={"/mypage/userinfo"} p_width={100} p_height={30}radius={5}>
                 내 정보 수정
               </BasicButton>
             </div>
@@ -195,7 +195,7 @@ function Mypage() {
             <div className="count">
               <span>{userData?.shippingCount}</span>
             </div>
-            <BasicButton radius={10} href={"/mypage/deliveryLook"}>
+            <BasicButton p_width={100} p_height={30}radius={5} href={"/mypage/deliveryLook"}>
               배송조회
             </BasicButton>
           </div>
@@ -204,7 +204,7 @@ function Mypage() {
             <div className="count">
               <span>{userData?.orderCount}</span>
             </div>
-            <BasicButton radius={10} href={"/mypage/orderitem"}>
+            <BasicButton p_width={120} p_height={30}radius={5} href={"/mypage/orderitem"}>
               주문 목록 조회
             </BasicButton>
           </div>
@@ -213,7 +213,7 @@ function Mypage() {
             <div className="count">
               <span>{userData?.productLikeCount}</span>
             </div>
-            <BasicButton radius={10} href={"/mypage/selectItem"}>
+            <BasicButton p_width={100} p_height={30} radius={5} href={"/mypage/selectItem"}>
               조회
             </BasicButton>
           </div>
@@ -222,7 +222,7 @@ function Mypage() {
             <div className="count">
               <span>{userData?.frequentlyOrderedProductCount}</span>
             </div>
-            <BasicButton radius={10} href={"/mypage/buyitem"}>
+            <BasicButton p_width={100} p_height={30} radius={5} href={"/mypage/buyitem"}>
               조회
             </BasicButton>
           </div>

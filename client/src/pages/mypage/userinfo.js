@@ -301,7 +301,7 @@ function Userinfo() {
               children={"수정하기"}
               font={"20"}
               radius={"5"}
-              p_height={"14"}
+              p_height={"50"}
               p_width={"150"}
               onClick={() => setIsmodal(true)}
               disabled={isdisabled}/>
