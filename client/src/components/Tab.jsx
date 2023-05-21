@@ -4,6 +4,8 @@ import { Route, Routes, NavLink } from "react-router-dom";
 
 const Container = styled.div`
   text-align: left;
+  align-self : center;
+  width:1050px;
   .colbtn{
     display:flex;
     justify-content: center;
@@ -19,7 +21,8 @@ const Container = styled.div`
 
   .nav {
       h3{
-        font-size: 20px;
+        font-size: 35px;
+        padding-left : 15px;
         margin-bottom:15px;
       }
 

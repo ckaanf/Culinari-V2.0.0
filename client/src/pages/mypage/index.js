@@ -21,9 +21,11 @@ const Layout = styled.div`
   width: 100%;
   height: 100%;
   margin: 0 auto;
+  display : flex;
+  flex-direction : column;
 `;
 const Mycard = styled.div`
-  background-color: rgb(255, 224, 214);
+  background-color: #ededff;
   width: 1050px;
   margin: 0 auto;
   display: flex;
@@ -50,7 +52,7 @@ const Mycard = styled.div`
 
     .ac_Event {
       justify-content: left;
-      background-color: #fff7f5;
+      background-color: white;
       width: 195px;
       padding: 10px;
       border-radius: 10px;
@@ -66,7 +68,7 @@ const Mycard = styled.div`
         }
 
         & span:last-child {
-          color: red;
+          color: #543277;
         }
       }
     }
@@ -85,7 +87,7 @@ const Mycard = styled.div`
     }
 
     .count {
-      color: white;
+      color: #2D0D49;
       font-size: 50px;
       margin: 20px 0;
     }
@@ -96,9 +98,6 @@ function Mypage() {
   const [user, setUser] = useState({});
   const [userData, setUserData] = useState(0);
   
-  
-  
-
   // "username": "id2",
   // "password": "!@#123password"
   useEffect(() => {

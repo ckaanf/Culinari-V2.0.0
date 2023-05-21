@@ -55,6 +55,7 @@ const ItemLayout = styled.div`
     display: flex;
     text-align: center;
     justify-content: center;
+    padding-bottom: 10px;
     & > * {
       flex-basis: 110px;
     }
@@ -124,7 +125,7 @@ function Serachitem() {
     <Mypagehead
       title={"찜한 상품"}
       subtitle={"최대 N개까지 저장됩니다."}
-      icon={<BiHeartCircle color="red" size={15} />}
+      icon={<BiHeartCircle color="purple" size={30} />}
       width={"90%"}
       line={true}
       >

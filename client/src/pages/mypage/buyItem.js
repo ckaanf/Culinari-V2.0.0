@@ -39,6 +39,7 @@ const ItemLayout = styled.div`
     display: flex;
     text-align: center;
     justify-content: center;
+    padding-bottom: 10px;
     & > * {
       flex-basis: 110px;
     }

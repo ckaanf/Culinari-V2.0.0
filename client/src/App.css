@@ -24,10 +24,6 @@ body {
   justify-items: center;
 }
 
-#header {
-  flex-basis: 158px;
-}
-
 #main {
   flex: 1;
 }

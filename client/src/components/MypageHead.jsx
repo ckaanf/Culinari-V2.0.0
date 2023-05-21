@@ -14,17 +14,29 @@ const Layout = styled.div`
     align-items:center;
     position: relative;
 
+    span{
+      font-size : 25px;
+      font-weight: bold;
+    }
+
+    .subtitle{
+      color:#783CB7;
+      font-size:16px;
+      margin-left: 10px;
+      font-weight: normal;
+    }
+
     .side{
       position: absolute;
       right:0;
     }
+    
+    .side>a>span{
+      font-size:16px;
+      font-weight: normal;
+    }
   }
 
-  .subtitle{
-    color:#783CB7;
-    font-size:12px;
-    margin-left: 10px;
-  }
 
   .icons{
     margin-right:2px;
