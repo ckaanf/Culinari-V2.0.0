@@ -26,7 +26,7 @@ const Layout = styled.div`
     position: absolute;
     bottom: 8px;
     color: red;
-    font-size: 12px;
+    font-size: 14px;
   }
 
 
@@ -37,7 +37,7 @@ const Layout = styled.div`
     position: absolute;
     bottom: 8px;
     color: red;
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .submit {
@@ -47,7 +47,7 @@ const Layout = styled.div`
   }
 
   .error_text {
-    font-size: 12px;
+    font-size: 14px;
     position: absolute;
     left: 0;
     bottom: 8px;

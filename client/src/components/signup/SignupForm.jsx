@@ -195,7 +195,7 @@ function SignForm() {
         <div className="error_box">
           {name && name.length > 0 && !nameCheck.test(name) ? (
             <div className="error_text">
-              올바르지 않은 이름입니다. (공백,특수문자,숫자는 사용불가합니다.)
+              올바르지 않은 이름입니다. (공백,특수문자,숫자는 사용불가)
             </div>
           ) : null}
         </div>
@@ -221,8 +221,7 @@ function SignForm() {
           signupEmail.length > 0 &&
           !emailCheck.test(signupEmail) ? (
             <div className="error_text">
-              올바르지 않은 이메일 입니다. [공백, 특수문자(!@#$%^&*-_)는
-              사용불가합니다.]
+              올바르지 않은 이메일입니다. (공백, 특수문자 사용불가)
             </div>
           ) : null}
         </div>

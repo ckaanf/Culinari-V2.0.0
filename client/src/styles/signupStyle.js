@@ -15,18 +15,19 @@ const Page = styled.div`
 
   .error_text{
     color : red;
-    font-size: 8px;
+    font-size: 14px;
     margin-top: -20px;
   }
   .error_text2{
     color : red;
-    font-size: 8px;
+    font-size: 14px;
     margin-top: -10px;
   }
 
   .error_box{
     display: flex;
     align-item : center;
+    margin-bottom: 8px;
 
   }
 `;
