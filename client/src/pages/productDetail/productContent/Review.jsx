@@ -27,6 +27,18 @@ const Header = styled.div`
       cursor: pointer;
       margin-left: 10px;
     }
+
+    li:first-child::before {
+      background-color: transparent;
+    }
+    
+    li::before {
+      content: "";
+      width: 1px;
+      height: 10px;
+      margin-right: 8px;
+      background-color: rgb(226, 226, 226);
+    }
   }
 `;
 

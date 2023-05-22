@@ -14,7 +14,7 @@ const HeaderContainer = styled.div`
 
   dl {
     width: 100%;
-    padding: 17px 0px 18px;
+    padding: 10px 0px 10px;
     border-top: 1px solid #f4f4f4;
     display: flex;
     align-items: flex-start;
@@ -37,9 +37,10 @@ const HeaderContainer = styled.div`
 
   .cart_option {
     width: 100%;
+    font-size : 16px;
     padding: 11px 10px 11px 15px;
-    font-size: 13px;
     border: 1px solid #f4f4f4;
+    letter-spacing: -0.5px;
   }
 
   .cart_option_item {
@@ -47,9 +48,11 @@ const HeaderContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 
     span {
       font-weight: bold;
+      font-size : 18px;
     }
   }
 
@@ -63,10 +66,10 @@ const HeaderContainer = styled.div`
 
   .total_price_text {
     padding-right: 12px;
-    font-size: 14px;
     font-weight: 500;
     color: #333;
     line-height: 20px;
+    font-size : 16px;
   }
 
   .total_price_number {
@@ -98,8 +101,9 @@ const HeaderContainer = styled.div`
   .cart_option_wrapper {
     width: 300px;
     margin-left: 10px;
-    padding: 10px;
+    padding: 15px;
     border: 1px solid #783CB7;
+    font-size: 15px;
 
     position: sticky;
     top: 10px;
@@ -107,7 +111,8 @@ const HeaderContainer = styled.div`
 
   .cart_option_title {
     margin-bottom: 10px;
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: bold;
   }
 `;
 
