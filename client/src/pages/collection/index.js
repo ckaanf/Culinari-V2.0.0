@@ -23,7 +23,7 @@ const PageHeader = styled.h3`
 `;
 
 const Content = styled.div`
-	max-width: 1300px;
+	max-width: 1100px;
 	margin: 50px auto 75px auto;
 	position: relative;
 	display: flex;
@@ -91,7 +91,7 @@ const Content = styled.div`
 			width: 100%;
 			display: grid;
 			grid-template-columns: repeat(auto-fill, 200px);
-			gap: 31px 18px;
+			gap: 0px 18px;
 			justify-content: center;
 		}
 	}

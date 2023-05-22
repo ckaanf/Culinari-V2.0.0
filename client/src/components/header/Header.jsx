@@ -45,7 +45,7 @@ const Layout = styled.div`
     }
 
     .myIcons {
-      gap: 5px;
+      gap: 10px;
     }
 
     .icons {
@@ -74,7 +74,7 @@ const Layout = styled.div`
       border-radius: 10px;
       justify-content: space-around;
       align-items: center;
-      margin: 0 10px;
+      margin: 0 30px;
 
       input {
         flex: 7;
