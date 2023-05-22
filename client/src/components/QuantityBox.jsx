@@ -14,7 +14,6 @@ const Quantity = styled.div`
   width: 100%;
   display: inherit;
   justify-content: center;
-  padding-top: 3px;
   font-size: 14px;
 `;
 

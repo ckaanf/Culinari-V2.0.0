@@ -99,6 +99,7 @@ const Layout = styled.div`
     .GNB {
       width: 1050px;
       margin: 0 auto;
+      font-weight: 500;
       // flex: 1;
 
       ul {
@@ -154,9 +155,11 @@ const Layout = styled.div`
             min-height: 200px;
             position: absolute;
             display: flex;
-            top: 140px;
+            top: 137px;
             padding-top: 10px;
             display: none;
+            font-size : 15px;
+            font-weight: 400;
 
             .drop_down {
               position: relative;

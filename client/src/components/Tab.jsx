@@ -15,7 +15,7 @@ const Container = styled.div`
     color: #783CB7;
     cursor: pointer;
     font-size: 12px;
-    padding: 7px 12px 4px 12px;
+    padding: 7px 12px;
     
   }
 

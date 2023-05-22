@@ -29,7 +29,7 @@ const Colbtn = styled.a`
     // padding: ${props => props.p_height}px ${props => props.p_width}px;
     width : ${props => props.p_width}px;
     height : ${props => props.p_height}px;
-    line-height : ${props=> props.p_height-2}px;
+    line-height : ${props=> props.p_height-5}px;
     display : block;
     text-align: center;
 

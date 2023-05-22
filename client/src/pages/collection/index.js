@@ -42,6 +42,7 @@ const Content = styled.div`
 
 		.category_title {
 			font-size: 19px;
+			font-weight : 700;
 			margin: 15px 10px 20px 10px;
 		}
 	}

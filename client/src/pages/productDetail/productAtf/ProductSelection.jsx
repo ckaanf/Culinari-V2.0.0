@@ -37,7 +37,7 @@ const HeaderContainer = styled.div`
 
   .cart_option {
     width: 100%;
-    font-size : 16px;
+    font-size : 15px;
     padding: 11px 10px 11px 15px;
     border: 1px solid #f4f4f4;
     letter-spacing: -0.5px;
@@ -74,16 +74,16 @@ const HeaderContainer = styled.div`
 
   .total_price_number {
     font-weight: bold;
-    font-size: 32px;
-    line-height: 36px;
+    font-size: 28px;
+    line-height: 28px;
     font-family: Tahoma;
   }
 
   .total_price_unit {
-    padding-left: 5px;
+    padding-left: 3px;
     font-size: 20px;
     font-weight: 600;
-    line-height: 30px;
+    line-height: 27px;
   }
 
   .add_cart_button_wrapper {
@@ -102,15 +102,15 @@ const HeaderContainer = styled.div`
     width: 300px;
     margin-left: 10px;
     padding: 15px;
-    border: 1px solid #783CB7;
+    border: 3px solid #C8BBE1;
     font-size: 15px;
-
+    border-radius : 10px;
     position: sticky;
     top: 10px;
   }
 
   .cart_option_title {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     font-size: 20px;
     font-weight: bold;
   }
