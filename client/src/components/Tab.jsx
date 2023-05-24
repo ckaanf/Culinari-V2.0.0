@@ -7,23 +7,25 @@ const Container = styled.div`
   align-self : center;
   width:1050px;
   .colbtn{
+    width : 140px;
     display:flex;
     justify-content: center;
     align-items: center;
-    border: 1px solid #783CB7;
-    border-radius: 12px;
-    color: #783CB7;
+    border-top: 1px solid #d7d7d7;
+    border-left: 1px solid #d7d7d7;
+    border-right: 1px solid #d7d7d7;
+    border-radius: 12px 12px 0 0;
+    font-weight : 500;
     cursor: pointer;
-    font-size: 12px;
-    padding: 7px 12px;
+    padding: 10px 16px;
     
   }
 
   .nav {
       h3{
+        font-weight : 500;
         font-size: 35px;
-        padding-left : 15px;
-        margin-bottom:15px;
+        margin-bottom:25px;
       }
 
       ul{
@@ -41,13 +43,15 @@ const Container = styled.div`
 
   .content {
       border-top: 1px solid #D7D7D7;
-      margin-top: 10px;
       padding: 30px;
   }
 
   .active{
     color: white;
-    background-color: #783CB7;
+    background-color: #2D0D49;
+    border-top: 1px solid #2D0D49;
+    border-left: 1px solid #2D0D49;
+    border-right: 1px solid #2D0D49;
   }
 
   

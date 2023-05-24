@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Layout = styled.div`
-  width:${props => props.width === undefined ? "80%" : props.width};
+  width:${props => props.width === undefined ? "90%" : props.width};
   margin: 0 auto;
   .container {
     padding-bottom: ${ props => props.line === props.filltap ? "0px" : "10px"};
@@ -13,10 +13,11 @@ const Layout = styled.div`
     display:flex;
     align-items:center;
     position: relative;
+    padding-bottom :10px;
 
     span{
-      font-size : 25px;
-      font-weight: bold;
+      font-size : 30px;
+      font-weight: 500;
     }
 
     .subtitle{

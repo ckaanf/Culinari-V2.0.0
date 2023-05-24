@@ -1,5 +1,6 @@
 import Mypagehead from "../../components/MypageHead";
 import styled from "styled-components";
+import preparing from "../../assets/preparing.png"
 
 const Layout = styled.div`
   img {
@@ -12,7 +13,7 @@ function Coupon() {
     <Mypagehead title={"내 쿠폰"} subtitle={"준비 중 입니다.."}>
       <Layout>
         <img
-          src="https://www.dhu.ac.kr/HOME/dhubio/data/designImages/dhubio201912162141475df77b8b6f60a"
+          src={preparing}
           alt="준비중 페이지"
         ></img>
       </Layout>

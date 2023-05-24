@@ -3,7 +3,6 @@ import axios from "axios";
 import styled from "styled-components";
 import { GoChevronRight } from "react-icons/go";
 import BasicButton from "../../components/button/BasicButton";
-import Tab from "../../components/Tab";
 import Userinfo from "./userinfo";
 import DeliverySet from "./deliverySet";
 import DeliveryLook from "./deliveryLook";
@@ -15,6 +14,7 @@ import Selectitem from "./selectItem";
 import ItemreviewList from "./itemreviewList";
 import Inquiry from "./inquiry";
 import ItemreviewWrite from "./itemreviewWrite";
+import ListMenu from "../../components/ListMenu";
 
 const Layout = styled.div`
   padding-top: 15px;
@@ -227,7 +227,7 @@ function Mypage() {
           </div>
         </div>
       </Mycard>
-      <Tab list={list} title="마이 페이지" flex={1} />
+      <ListMenu list={list} title="마이 페이지" flex={1} />
     </Layout>
   );
 }

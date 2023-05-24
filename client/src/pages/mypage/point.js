@@ -1,6 +1,6 @@
 import Mypagehead from "../../components/MypageHead";
 import styled from "styled-components";
-
+import preparing from "../../assets/preparing.png"
 const Layout = styled.div`
     img{
         width:100%;
@@ -12,8 +12,8 @@ function Point() {
     <Mypagehead title={"내 포인트"} subtitle={"준비 중 입니다..."}>
       <Layout>
         <img
-          src="https://www.dhu.ac.kr/HOME/dhubio/data/designImages/dhubio201912162141475df77b8b6f60a"
-          alt="준비중 페이지"
+          src={preparing}
+          alt="페이지 준비중입니다"
         ></img>
       </Layout>
     </Mypagehead>
