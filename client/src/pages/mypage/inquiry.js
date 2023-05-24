@@ -47,7 +47,7 @@ const Layout = styled.div`
       }
 
       .q_list_state {
-        color: #c26d53;
+        color: #783CB7;
       }
     }
   }
@@ -77,7 +77,7 @@ function Inquiry() {
       side_title={
         <a href="/service/one-on-one">
           <span>{"고객센터 "}</span>
-          <span style={{ color: "#FF6767" }}>{">"}</span>
+          <span style={{ color: "#783CB7" }}>{">"}</span>
         </a>
       }
     >

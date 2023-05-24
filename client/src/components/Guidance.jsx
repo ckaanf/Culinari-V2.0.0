@@ -2,7 +2,7 @@ import styled from "styled-components";
 import BasicButton from "./button/BasicButton";
 
 const Layout = styled.div`
-  background-color: rgba(0, 0, 0, 0.1);
+  background-color: rgba(0, 0, 0, 0.3);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,22 +12,20 @@ const Layout = styled.div`
   right: 0;
   bottom: 0;
   left: 0;
-  color: #ff6767;
 
   .container {
     margin:0;
-    padding: 10px;
-    border: 1px solid #ff6767;
+    padding: 30px;
+    background-color : white;
     display:flex;
     flex-direction:  column;
     align-items:center;
     justify-content: space-around;
-    font-size: 15px;
-    background-color: #FFF7F5;
-    border-radius: 5px;
-    height: 100px;
+    border-radius: 10px;
+    height: 120px;
 
     .guidance_btns{
+      margin-top: 20px;
       display:flex;
       justify-content: space-around;
       gap:10px;
@@ -36,9 +34,6 @@ const Layout = styled.div`
 `;
 
 function Guidance({ text, close, ok}) {
-  
-  
-  
   return (
     <Layout>
       <div className="container">

@@ -127,7 +127,7 @@ function OneOnOneInquiry() {
       ></textarea>
 
       <div className="btn_container" onClick={handleSubmitInquiry}>
-        <BasicButton p_width={"20"} p_height={"7"}>
+        <BasicButton p_width={"100"} p_height={"40"}>
           문의 작성
         </BasicButton>{" "}
       </div>

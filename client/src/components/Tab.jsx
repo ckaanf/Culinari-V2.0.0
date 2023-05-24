@@ -4,24 +4,28 @@ import { Route, Routes, NavLink } from "react-router-dom";
 
 const Container = styled.div`
   text-align: left;
+  align-self : center;
+  width:1050px;
   .colbtn{
+    width : 140px;
     display:flex;
     justify-content: center;
     align-items: center;
-    background-color: #FFF7F5;
-    border: 1px solid #ff6767;
-    border-radius: 12px;
-    color: #ff6767;
+    border-top: 1px solid #d7d7d7;
+    border-left: 1px solid #d7d7d7;
+    border-right: 1px solid #d7d7d7;
+    border-radius: 12px 12px 0 0;
+    font-weight : 500;
     cursor: pointer;
-    font-size: 12px;
-    padding: 7px 12px 4px 12px;
+    padding: 10px 16px;
     
   }
 
   .nav {
       h3{
-        font-size: 20px;
-        margin-bottom:15px;
+        font-weight : 500;
+        font-size: 35px;
+        margin-bottom:25px;
       }
 
       ul{
@@ -39,13 +43,15 @@ const Container = styled.div`
 
   .content {
       border-top: 1px solid #D7D7D7;
-      margin-top: 10px;
       padding: 30px;
   }
 
   .active{
     color: white;
-    background-color: #FF6767;
+    background-color: #2D0D49;
+    border-top: 1px solid #2D0D49;
+    border-left: 1px solid #2D0D49;
+    border-right: 1px solid #2D0D49;
   }
 
   

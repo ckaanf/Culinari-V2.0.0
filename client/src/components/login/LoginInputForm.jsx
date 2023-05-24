@@ -51,7 +51,7 @@ const LoginContainer = styled.section`
   .tabsActive {
     background: white;
     border-bottom: 1px solid transparent;
-    color: #c26d53;
+    color: #783CB7;
   }
 
   .tabsActive::before {

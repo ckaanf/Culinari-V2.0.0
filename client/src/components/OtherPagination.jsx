@@ -17,7 +17,6 @@ const Layout = styled.div`
     display: flex;
     align-items: center;
     height: 100%;
-    background-color: #ffeaea;
 
     span {
       padding: 10px;
@@ -26,8 +25,7 @@ const Layout = styled.div`
       border-radius: 8px;
 
       &:hover{
-        background-color: #ff6767;
-        color: white;
+        color: #783CB7;
         border-radius: 8px;
       }
     }
@@ -36,8 +34,7 @@ const Layout = styled.div`
 
 
   .current {
-    background-color: #ff6767;
-    color: white;
+    color: #783CB7;
   }
 `;
 

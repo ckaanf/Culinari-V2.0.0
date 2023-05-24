@@ -15,18 +15,19 @@ const Page = styled.div`
 
   .error_text{
     color : red;
-    font-size: 8px;
+    font-size: 14px;
     margin-top: -20px;
   }
   .error_text2{
     color : red;
-    font-size: 8px;
+    font-size: 14px;
     margin-top: -10px;
   }
 
   .error_box{
     display: flex;
     align-item : center;
+    margin-bottom: 8px;
 
   }
 `;
@@ -86,16 +87,14 @@ const ButtonWrapper = styled.div`
   display: flex;
   justify-content: center;
   gap: 8px;
-  border-top: 1px solid rgb(244, 244, 244);
   text-align: center;
-  padding-top: 20px;
   margin-top: 20px;
 
   a {
     background-color: #ffffff;
-    color: #c26d53;
+    color: #783CB7;
     border-radius: 3px;
-    outline: 1px solid #c26d53;
+    outline: 1px solid #783CB7;
   }
 `;
 
@@ -147,7 +146,7 @@ const ModalText = styled.div`
 `;
 
 const CloseButton = styled.button`
-  background-color: #ff7f7f;
+  background-color: #783CB7;
   color: white;
   font-size: 16px;
   padding: 8px 20px;

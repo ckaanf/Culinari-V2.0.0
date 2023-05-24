@@ -18,7 +18,6 @@ const DetailContainer = styled.div`
 `;
 const DetailBar = styled.div`
   width: 100%;
-  background-color: #ffdede;
   font-size: 15px;
   margin-top: 15px;
   display: flex;
@@ -77,7 +76,7 @@ function ServiceDetailpage({ Dummy }) {
         <ContentBox>감사합니다</ContentBox>
       </DetailContainer>
       <div className="btn_container" onClick={handleClickBtn}>
-        <BasicButton p_width={"20"} p_height={"7"}>
+        <BasicButton p_width={"100"} p_height={"40"}>
           목록으로{" "}
         </BasicButton>{" "}
       </div>

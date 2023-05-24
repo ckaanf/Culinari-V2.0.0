@@ -57,7 +57,7 @@ const Layout = styled.div`
       }
 
       span {
-        color: #ff6767;
+        color: #783CB7;
         font-size: 12px;
       }
     }
@@ -139,8 +139,8 @@ function ItemreviewWrite({ item, close}) {
         <div className="write_footer">
           <BasicButton
             font={"17"}
-            p_height={"12"}
-            p_width={"35"}
+            p_height={"100"}
+            p_width={"40"}
             onClick={() => postReview(item)}
             disabled={ reviewStar === 0 ? true : content === "" ? true : false}
           >
@@ -149,8 +149,8 @@ function ItemreviewWrite({ item, close}) {
           <BasicButton
             href={"/mypage/itemreviewList"}
             font={"17"}
-            p_height={"12"}
-            p_width={"35"}
+            p_height={"100"}
+            p_width={"40"}
           >
             목록으로
           </BasicButton>

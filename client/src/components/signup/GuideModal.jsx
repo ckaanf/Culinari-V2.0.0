@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components";
+import BasicButton from "../button/BasicButton";
 
 const Page = styled.div`
   .modal {
@@ -55,7 +56,7 @@ const Section = styled.section`
   background-color: #fff;
   animation: modal-show 0.3s;
   overflow: hidden;
-  border: 1px solid #c26d53;
+  border: 1px solid #783CB7;
 `;
 
 const Main = styled.main`
@@ -72,14 +73,7 @@ const Footer = styled.footer`
   justify-content: center;
   text-align: center;
   align-items: center;
-  div {
-    width: 50px;
-    height: 30px;
-    padding: 6px 12px;
-    border: 1px solid #c26d53;
-    border-radius: 5px;
-    font-size: 13px;
-  }
+
 `;
 
 const GuideModal = (props) => {
@@ -92,22 +86,22 @@ const GuideModal = (props) => {
           <Section>
             {type === "checkId" ? (
               response === 405 || signupId.length < 6 ? (
-                <Main>사용 불가능한 아이디입니다</Main>
+                <Main>사용 불가능한 아이디입니다.</Main>
               ) : (
-                <Main>사용 가능한 아이디입니다</Main>
+                <Main>사용 가능한 아이디입니다.</Main>
               )
             ) : null}
             {type === "checkEmail" ? (
               response === 200 && signupEmail.includes("@") ? (
-                <Main>사용 가능한 이메일입니다</Main>
+                <Main>사용 가능한 이메일입니다.</Main>
               ) : (
-                <Main>사용 불가능한 이메일입니다</Main>
+                <Main>사용 불가능한 이메일입니다.</Main>
               )
             ) : null}
 
             <Footer>
               <div className="close" onClick={close}>
-                확인
+                <BasicButton>확인</BasicButton>
               </div>
             </Footer>
           </Section>

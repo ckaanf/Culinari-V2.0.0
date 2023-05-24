@@ -26,7 +26,7 @@ const Layout = styled.div`
     position: absolute;
     bottom: 8px;
     color: red;
-    font-size: 12px;
+    font-size: 14px;
   }
 
 
@@ -37,7 +37,7 @@ const Layout = styled.div`
     position: absolute;
     bottom: 8px;
     color: red;
-    font-size: 12px;
+    font-size: 14px;
   }
 
   .submit {
@@ -47,7 +47,7 @@ const Layout = styled.div`
   }
 
   .error_text {
-    font-size: 12px;
+    font-size: 14px;
     position: absolute;
     left: 0;
     bottom: 8px;
@@ -65,10 +65,9 @@ const Layout = styled.div`
       align-items: center;
       width: 100%;
       height: 50px;
-      border: 1px solid #ff6767;
+      border: 1px solid #783CB7;
       border-radius: 3px;
-      background-color: #fff7f5;
-      color: #ff6767;
+      color: #783CB7;
       cursor: pointer;
       transition: 1s;
 
@@ -81,10 +80,9 @@ const Layout = styled.div`
       position: absolute;
       right: 10px;
       top: 31px;
-      color: #ff6767;
-      border: 1px solid #ff6767;
+      color: #783CB7;
+      border: 1px solid #783CB7;
       border-radius: 3px;
-      background-color: #fff7f5;
       padding:5px;
 
     }
@@ -303,7 +301,7 @@ function Userinfo() {
               children={"수정하기"}
               font={"20"}
               radius={"5"}
-              p_height={"14"}
+              p_height={"50"}
               p_width={"150"}
               onClick={() => setIsmodal(true)}
               disabled={isdisabled}/>

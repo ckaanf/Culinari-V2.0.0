@@ -3,6 +3,7 @@ import axios from "axios";
 import styled from "styled-components";
 import SideInput from "./SideInput";
 import BasicInput from "./button/BasicButton";
+import { TfiClose } from 'react-icons/tfi';
 
 const Layout = styled.div`
   background-color: rgba(0, 0, 0, 0.333);
@@ -17,25 +18,26 @@ const Layout = styled.div`
 
   .patchModal_modal {
     position: relative;
-    width: 400px;
-    padding: 20px 20px;
+    width: 450px;
+    padding: 30px 30px;
     display: flex;
     border-radius: 10px;
     flex-direction: column;
     background-color: hsla(0, 0%, 100%, 0.936);
-    border: 1px solid black;
 
     .patchModal_head {
       display: flex;
       justify-content: center;
       align-items: center;
-
+      font-size : 30px;
+      font-weight : 500;
+      margin-bottom : 10px;
       .close {
         position: absolute;
-        top: 5px;
-        right: 5px;
+        top: 15px;
+        right: 15px;
         button {
-          font-size: 18px;
+          font-size: 30px;
         }
       }
     }
@@ -96,7 +98,9 @@ function PatchModal({ close, data }) {
         <div className="patchModal_head">
           <p>{"배송지 수정"}</p>
           <div className="close">
-            <button onClick={close}>X</button>
+            <button onClick={close}>
+              <TfiClose />
+            </button>
           </div>
         </div>
         <div className="patchModal_body">

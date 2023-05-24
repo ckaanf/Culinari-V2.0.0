@@ -55,6 +55,7 @@ const ItemLayout = styled.div`
     display: flex;
     text-align: center;
     justify-content: center;
+    padding-bottom: 10px;
     & > * {
       flex-basis: 110px;
     }
@@ -124,7 +125,7 @@ function Serachitem() {
     <Mypagehead
       title={"찜한 상품"}
       subtitle={"최대 N개까지 저장됩니다."}
-      icon={<BiHeartCircle color="red" size={15} />}
+      icon={<BiHeartCircle color="purple" size={30} />}
       width={"90%"}
       line={true}
       >
@@ -154,7 +155,7 @@ function Serachitem() {
                   <CountBox setState={setQuantity}/>
                 </div>
                 <div className="buttons">
-                  <BasicButton p_height={6} onClick={()=>cartKey(data.productId)}>장바구니 담기</BasicButton>
+                  <BasicButton p_height={40} onClick={()=>cartKey(data.productId)}>장바구니 담기</BasicButton>
                   {cartModal ? (
                       <Guidance
                         text={"해당 상품을 장바구니에 담으시겠습니까?"}

@@ -27,6 +27,18 @@ const Header = styled.div`
       cursor: pointer;
       margin-left: 10px;
     }
+
+    li:first-child::before {
+      background-color: transparent;
+    }
+    
+    li::before {
+      content: "";
+      width: 1px;
+      height: 10px;
+      margin-right: 8px;
+      background-color: rgb(226, 226, 226);
+    }
   }
 `;
 
@@ -64,7 +76,7 @@ const FilterList = styled.li.attrs(({ dataId }) => ({
   color: rgb(153, 153, 153);
   cursor: pointer;
 
-  color: ${({ dataId, sort }) => (dataId === sort ? "#ff6767" : "rgb(153, 153, 153)")};
+  color: ${({ dataId, sort }) => (dataId === sort ? "#783CB7" : "rgb(153, 153, 153)")};
 `;
 
 const NoReviewDataWrapper = styled.div`
@@ -139,7 +151,7 @@ function Review({ productName }) {
                     .fill(null)
                     .map((_, index) => index < review.reviewStar)
                     .map((point) =>
-                      point ? <Star width="20px" fill="#ff6767" key={Math.random()} /> : <Star width="20px" fill="#ddd" key={Math.random()} />
+                      point ? <Star width="20px" fill="#783CB7" key={Math.random()} /> : <Star width="20px" fill="#ddd" key={Math.random()} />
                     )}
 
                   <div className="review-content">{review.content}</div>

@@ -7,7 +7,7 @@ const Layout = styled.div`
     
 
     .countBox_event{
-        color:#FF6767;
+        color:#783CB7;
         cursor: pointer;
     }
     

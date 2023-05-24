@@ -10,57 +10,66 @@ import BasicButton from "../button/BasicButton";
 import { OtherPagination } from "../OtherPagination";
 
 const Page = styled.div`
-  // max-width: 900px;
-  .question_btn {
-    margin-top: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: right;
-  }
+	// max-width: 900px;
+	.question_btn {
+		margin-top: 50px;
+		display: flex;
+		align-items: center;
+		justify-content: right;
+	}
 `;
 
 const PagenationWrapper = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 `;
 
 function OneOnOne() {
-  const [question, setQuestion] = useState("");
-  const [page, setPage] = useState(0);
+	const [question, setQuestion] = useState("");
+	const [page, setPage] = useState(0);
 
-  const fetchData = async () => {
-    await axios
-      .get(`${process.env.REACT_APP_URL}/board/inquiry?page=${page}&size=10`, {
-        headers: {
-          "Content-Type": `application/json`,
-          authorization: JSON.parse(localStorage.getItem("token")).authorization,
-        },
-      })
-      .then((res) => setQuestion(res.data))
-      .catch((err) => console.log(err));
-  };
-  useEffect(() => {
-    fetchData();
-  }, [page]);
+	const fetchData = async () => {
+		await axios
+			.get(
+				`${process.env.REACT_APP_URL}/board/inquiry?page=${page}&size=10`,
+				{
+					headers: {
+						"Content-Type": `application/json`,
+						authorization: JSON.parse(localStorage.getItem("token")).authorization,
+					},
+				}
+			)
+			.then((res) => setQuestion(res.data))
+			.catch((err) => console.log(err));
+	};
+	useEffect(() => {
+		fetchData();
+	}, [page]);
 
-  return (
-    <Page>
-      <OneOnOneHeader></OneOnOneHeader>
-      <OneOnOneList question={question.data}></OneOnOneList>
-      <div className="question_btn">
-        <Link to={`/service/one-on-one/inquiry`}>
-          <BasicButton p_width={"20"} p_height={"7"}>
-            문의하기
-          </BasicButton>
-        </Link>
-      </div>
+	return (
+		<Page>
+			<OneOnOneHeader></OneOnOneHeader>
+			<OneOnOneList question={question.data}></OneOnOneList>
+			<div className="question_btn">
+				<BasicButton
+					p_width={"100"}
+					p_height={"40"}
+					href={`/service/one-on-one/inquiry`}
+				>
+					문의하기
+				</BasicButton>
+			</div>
 
-      <PagenationWrapper>
-        <OtherPagination state={page} setState={setPage} pageInfo={question.pageInfo} />
-      </PagenationWrapper>
-    </Page>
-  );
+			<PagenationWrapper>
+				<OtherPagination
+					state={page}
+					setState={setPage}
+					pageInfo={question.pageInfo}
+				/>
+			</PagenationWrapper>
+		</Page>
+	);
 }
 
 export default OneOnOne;

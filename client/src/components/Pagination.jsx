@@ -15,7 +15,6 @@ const PageUl = styled.ul`
   padding: 1px;
   margin-top: 50px;
   display: inline-block;
-  background-color: #ffeaea;
 `;
 
 const PageLi = styled.li`
@@ -24,17 +23,14 @@ const PageLi = styled.li`
   padding: 5px;
   border-radius: 5px;
   width: 25px;
-  color: ${({ number, currentPage }) => (number && number === currentPage ? "white" : "black")};
-  background-color: ${({ number, currentPage }) => (number && number === currentPage ? "#ff6767" : null)};
+  color: ${({ number, currentPage }) => (number && number === currentPage ? "#783CB7" : "black")};
 
   &:hover {
     cursor: pointer;
-    color: white;
-    background-color: #ff6767;
+    color: #783CB7;
   }
   &:focus::after {
-    color: white;
-    background-color: #ff6767;
+    color: #783CB7;
   }
 `;
 

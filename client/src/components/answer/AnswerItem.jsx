@@ -19,7 +19,7 @@ const ReviewContainer = styled.div`
   }
 
   button {
-    color: #c26d53;
+    color: #783CB7;
   }
 
   .top_box {

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const Layout = styled.div`
-  width:${props => props.width === undefined ? "80%" : props.width};
+  width:${props => props.width === undefined ? "90%" : props.width};
   margin: 0 auto;
   .container {
     padding-bottom: ${ props => props.line === props.filltap ? "0px" : "10px"};
@@ -13,18 +13,31 @@ const Layout = styled.div`
     display:flex;
     align-items:center;
     position: relative;
+    padding-bottom :10px;
+
+    span{
+      font-size : 30px;
+      font-weight: 500;
+    }
+
+    .subtitle{
+      color:#783CB7;
+      font-size:16px;
+      margin-left: 10px;
+      font-weight: normal;
+    }
 
     .side{
       position: absolute;
       right:0;
     }
+    
+    .side>a>span{
+      font-size:16px;
+      font-weight: normal;
+    }
   }
 
-  .subtitle{
-    color:#C26D53;
-    font-size:12px;
-    margin-left: 10px;
-  }
 
   .icons{
     margin-right:2px;

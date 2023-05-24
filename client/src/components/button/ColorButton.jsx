@@ -18,8 +18,8 @@ ColorButton.defaultProps = {
 };
 
 const Colbtn = styled.a`
-  background-color: #ff6767;
-  border: 1px solid #ff6767;
+  background-color: #783CB7;
+  border: 1px solid #783CB7;
   cursor: pointer;
   color: #ffffff;
   vertical-align: middle;

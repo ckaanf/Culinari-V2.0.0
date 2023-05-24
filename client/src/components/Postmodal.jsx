@@ -14,15 +14,15 @@ const Layout = styled.div`
   cursor: pointer;
 
   .icons {
-    border: 1px solid red;
-    color: red;
+    border: 1px solid purple;
+    color: purple;
     border-radius: 50%;
   }
 `;
 
 const Modal = styled.div`
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.333);
+  background-color: rgba(0, 0, 0, 0.3);
   top: 0;
   right: 0;
   bottom: 0;
@@ -217,12 +217,12 @@ function Postmodal() {
             </div>
             <div className="btns">
               <div>
-                <Basicbutton onClick={save} p_height={"10"} p_width={"10"}>
+                <Basicbutton onClick={save} p_height={"40"} p_width={"120"}>
                   저장하기
                 </Basicbutton>
               </div>
               <div onClick={() => setIsopen(false)}>
-                <Basicbutton p_height={"10"} p_width={"10"}>닫기</Basicbutton>
+                <Basicbutton p_height={"40"} p_width={"120"}>닫기</Basicbutton>
               </div>
             </div>
           </div>

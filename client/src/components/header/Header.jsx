@@ -3,13 +3,13 @@ import styled from "styled-components";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 
-import { BsFillPersonFill, BsCart4, BsList, BsSearch } from "react-icons/bs";
-import logo from "../../assets/fitlogo.png";
+import { BsCart4, BsList, BsSearch } from "react-icons/bs";
+import logo from "../../assets/logo.svg";
+import mypagebtn from "../../assets/mypage-icon.svg";
 
 const Layout = styled.div`
   width: 100%;
-  margin: 0 auto;
-  height: 158px;
+  margin: 5px auto 0;
 
   .flex {
     display: flex;
@@ -18,19 +18,28 @@ const Layout = styled.div`
   }
 
   .top {
-    padding: 7px 10px;
+    padding: 7px 30px;
     gap: 15px;
     justify-content: flex-end;
-    background-color: #ffc3b1;
+
+    >div>a{
+      color : #333333;
+    }
+
+    >div{
+      font-size: 15px;
+    }
+
+    >div>a:hover{
+      color : #543277;
+    }
   }
 
   .mid {
-    margin-top: 20px;
-
     .logo {
       margin-right: 10px;
       img {
-        width: 100px;
+        width: 140px;
         margin-left: -70px;
       }
     }
@@ -47,42 +56,50 @@ const Layout = styled.div`
       .icon {
         font-size: 30px;
         margin-bottom: 2px;
+        color: #2D0D49;
+      }
+
+      .img_icon{
+        width : 45px;
+        height: 45px;
+        shape-rendering: auto;
       }
     }
 
-    .serach {
+    .search {
       display: flex;
-      border: 1px solid #ffc3b1;
+      border: 2px solid #543277;
       width: 500px;
       height: 48px;
       border-radius: 10px;
       justify-content: space-around;
       align-items: center;
-      margin: 0 10px;
+      margin: 0 30px;
 
       input {
-        flex: 5;
+        flex: 7;
         border: none;
         margin-left: 10px;
       }
 
       button {
         flex: 1;
-        font-size: 20px;
-        color: #ffc3b1;
+        display: flex;
+        justify-content:center;
+        font-size: 23px;
+        color: #543277;
       }
     }
   }
 
   .bottom {
-    // border-bottom: 1px solid #a9a9a9;
     box-shadow: 0 3px 4px 0 rgb(0 0 0 / 7%);
-
     margin-top: 20px;
-
+    
     .GNB {
       width: 1050px;
       margin: 0 auto;
+      font-weight: 500;
       // flex: 1;
 
       ul {
@@ -96,20 +113,20 @@ const Layout = styled.div`
           padding: 5px 5px 5px 0;
 
           .home {
-            color: ${({ pathname }) => (pathname === "/" ? "#ff6767" : null)};
+            color: ${({ pathname }) => (pathname === "/" ? "#783CB7" : null)};
           }
 
           .new_product {
-            color: ${({ pathname }) => (pathname.includes("/newproduct") ? "#ff6767" : null)};
+            color: ${({ pathname }) => (pathname.includes("/newproduct") ? "#783CB7" : null)};
           }
 
           .best_products {
-            color: ${({ pathname }) => (pathname.includes("/bestproducts") ? "#ff6767" : null)};
+            color: ${({ pathname }) => (pathname.includes("/bestproducts") ? "#783CB7" : null)};
           }
 
           span {
             &:hover {
-              color: #ff6767;
+              color: #783CB7;
             }
           }
         }
@@ -119,8 +136,14 @@ const Layout = styled.div`
           align-items: center;
           cursor: pointer;
 
+          .category_icon{
+            position : relative;
+            top : 1px;
+            margin-right: 3px;
+          }
+
           &:hover .category {
-            color: #ff6767;
+            color: #783CB7;
           }
 
           &:hover .drop_down_container {
@@ -132,9 +155,11 @@ const Layout = styled.div`
             min-height: 200px;
             position: absolute;
             display: flex;
-            top: 146px;
+            top: 137px;
             padding-top: 10px;
             display: none;
+            font-size : 15px;
+            font-weight: 400;
 
             .drop_down {
               position: relative;
@@ -172,7 +197,7 @@ const Layout = styled.div`
                 }
 
                 &:hover a {
-                  color: #ff6767;
+                  color: #783CB7;
                   background-color: #f1f3f5;
                 }
               }
@@ -185,7 +210,7 @@ const Layout = styled.div`
 `;
 
 const CategoryList = styled.li`
-  color: ${({ ishover }) => (ishover ? "#ff6767" : null)};
+  color: ${({ ishover }) => (ishover ? "#783CB7" : null)};
   background-color: ${({ ishover }) => (ishover ? "#f1f3f5" : null)};
 
   a {
@@ -193,7 +218,7 @@ const CategoryList = styled.li`
     width: 100%;
     height: 100%;
     display: block;
-    color: ${({ ishover }) => (ishover ? "#ff6767" : null)};
+    color: ${({ ishover }) => (ishover ? "#783CB7" : null)};
   }
 `;
 
@@ -269,7 +294,7 @@ function Header() {
               로그아웃
             </a>
           ) : (
-            <a href="/login">로그인 / 회원가입</a>
+            <a href="/login">로그인/회원가입</a>
           )}
         </div>
 
@@ -283,7 +308,7 @@ function Header() {
             <img src={logo} alt="logo"></img>
           </a>
         </div>
-        <form className="serach" onSubmit={handleSearchProductSubmit}>
+        <form className="search" onSubmit={handleSearchProductSubmit}>
           <input placeholder="검색어를 입력해주세요" onChange={({ target }) => setSearchText(target.value)}></input>
           <button>
             <BsSearch />
@@ -292,7 +317,7 @@ function Header() {
         <div className="myIcons flex">
           <div className="icons">
             <a href="/mypage/userInfo">
-              <BsFillPersonFill className="icon" />
+              <img src={mypagebtn} alt="마이페이지 버튼" className="img_icon" />
             </a>
           </div>
           <div className="icons">
@@ -306,7 +331,7 @@ function Header() {
         <div className="GNB">
           <ul>
             <li className="category_container">
-              <span className="category">
+              <span className="category category_icon">
                 <BsList size="25" />
               </span>
               <span className="category">카테고리</span>

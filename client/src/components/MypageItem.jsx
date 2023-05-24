@@ -13,7 +13,6 @@ const Layout = styled.div`
     display: flex;
     text-align: center;
     justify-content: space-around;
-    background-color: #ffdede;
     padding: 5px 10px;
     & > p {
       flex: 1;
@@ -59,11 +58,10 @@ const Layout = styled.div`
         resize: none;
     }
     button{
-        background-color:#FFF7F5;
-        border: 1px solid #FF6767;
+        border: 1px solid #783CB7;
         border-radius:5px;
         text-align:center;
-        color: #FF6767;
+        color: #783CB7;
         flex:1;
     }
     
@@ -75,11 +73,10 @@ const Layout = styled.div`
     button{
         margin: 0 5px;
         padding: 5px;
-        background-color:#FFF7F5;
-        border: 1px solid #FF6767;
+        border: 1px solid #783CB7;
         border-radius:5px;
         text-align:center;
-        color: #FF6767;
+        color: #783CB7;
     }
   }
 `;

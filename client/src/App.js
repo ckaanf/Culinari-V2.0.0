@@ -93,7 +93,6 @@ function App() {
             <Route path="/pay/failpage" element={<FailPayment />} />
           </Routes>
         </main>
-        <footer id="footer"></footer>
         <Footer />
       </div>
       </AuthProvider>

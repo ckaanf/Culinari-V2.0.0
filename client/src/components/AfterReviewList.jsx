@@ -175,14 +175,14 @@ function AfterReviewList({item, afterData, setAfterData, idx}) {
           <div className="right_btns">
             <BasicButton
               onClick={() => setListModify(true)}
-              p_height={"5"}
-              p_width={"15"}>
+              p_height={"60"}
+              p_width={"100"}>
               {"수정"}
             </BasicButton>
             <BasicButton
               onClick={() => setListDelete(true)}
-              p_height={"5"}
-              p_width={"15"}
+              p_height={"60"}
+              p_width={"100"}
             >
               {"삭제"}
             </BasicButton>
@@ -215,7 +215,7 @@ function AfterReviewList({item, afterData, setAfterData, idx}) {
             <div className="submit">
               <BasicButton 
               onClick={()=>setIsOpen(true)}
-              p_height={25}>수정하기</BasicButton>
+              p_height={40} p_width={150}>수정하기</BasicButton>
             </div> : null}
             {isOpen ? (
               <Guidance

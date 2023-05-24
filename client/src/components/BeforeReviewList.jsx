@@ -80,8 +80,8 @@ function BeforeReviewList({setState, item}) {
                 productId: item.productId
             }
         )}><BasicButton
-        p_height={"5"}
-        p_width={"30"}
+        p_height={"40"}
+        p_width={"150"}
         >{"후기작성"}</BasicButton></div>
         </div>
     </Layout>

@@ -61,7 +61,7 @@ const SelectButtonContainer = styled.div`
   }
 
   .delete-selection {
-    color: #c26d53;
+    color: #783CB7;
     margin-right: 10px;
     cursor: pointer;
   }
@@ -71,7 +71,7 @@ const TotalPriceBox = styled.div`
   height: 50px;
   margin: 26px 0;
   padding-top: 2px;
-  border: 1px solid #ff6767;
+  border: 1px solid #783CB7;
   border-radius: 3px;
   display: flex;
   justify-content: center;
@@ -87,7 +87,7 @@ const TotalPriceBox = styled.div`
   }
 
   .sign {
-    color: #ff6767;
+    color: #783CB7;
   }
 `;
 
@@ -285,7 +285,7 @@ function Cart() {
         </TotalPriceBox>
 
         <OrderButtonContainer>
-          <BasicButton href={"/collections/best-product"} children={"상품 더 담기"} font={"20"} radius={"5"} p_height={"10"} p_width={"30"} />
+          <BasicButton href={"/collections/best-product"} children={"상품 더 담기"} font={"20"} radius={"5"} p_height={"48"} p_width={"140"} />
           <div onClick={handleOrderButtonClick}>
             <ColorButton children={"주문하기"} font={"20"} radius={"5"} p_height={"10"} p_width={"30"} />
           </div>
