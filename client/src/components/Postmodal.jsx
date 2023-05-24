@@ -22,7 +22,7 @@ const Layout = styled.div`
 
 const Modal = styled.div`
   position: fixed;
-  background-color: rgba(0, 0, 0, 0.333);
+  background-color: rgba(0, 0, 0, 0.3);
   top: 0;
   right: 0;
   bottom: 0;
