@@ -2,7 +2,7 @@ import styled from "styled-components";
 import logo from "../../../src/assets/logo.svg";
 import githubLogo from "../../assets/github-logo.png";
 
-const Page = styled.div`
+const Page = styled.footer`
   box-shadow: 0 -3px 4px 0 rgb(0 0 0 / 7%);
 
   flex-basis: 150px;

@@ -7,7 +7,7 @@ import { BsCart4, BsList, BsSearch } from "react-icons/bs";
 import logo from "../../assets/logo.svg";
 import mypagebtn from "../../assets/mypage-icon.svg";
 
-const Layout = styled.div`
+const Layout = styled.header`
   width: 100%;
   margin: 5px auto 0;
 
@@ -328,7 +328,7 @@ function Header() {
         </div>
       </div>
       <div className="bottom flex">
-        <div className="GNB">
+        <nav className="GNB">
           <ul>
             <li className="category_container">
               <span className="category category_icon">
@@ -384,7 +384,7 @@ function Header() {
             </li>
             <li>이벤트</li>
           </ul>
-        </div>
+        </nav>
       </div>
     </Layout>
   );
