@@ -28,7 +28,7 @@ function ScrollTop() {
     };
   }, []);
 
-  return <Icon position={position} onClick={() => window.scrollTo(0, 0)} src={icon} width="60"></Icon>;
+  return <Icon position={position} onClick={() => window.scrollTo(0, 0)} src={icon} alt="위로 가기" width="60"></Icon>;
 }
 
 export default ScrollTop;

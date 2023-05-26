@@ -1,8 +1,8 @@
 import styled from "styled-components";
-import logo from "../../../src/assets/logo.jpg";
+import logo from "../../../src/assets/logo.svg";
 import githubLogo from "../../assets/github-logo.png";
 
-const Page = styled.div`
+const Page = styled.footer`
   box-shadow: 0 -3px 4px 0 rgb(0 0 0 / 7%);
 
   flex-basis: 150px;
@@ -63,7 +63,7 @@ function Footer() {
     <Page>
       <div className="footer_container">
         <div className="left_box">
-          <img className="logo" src={logo}></img>
+          <img className="logo" src={logo} alt="컬리나리 로고"></img>
         </div>
         <div className="right_box">
           <div className="team_name">

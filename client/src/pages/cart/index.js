@@ -291,11 +291,6 @@ function Cart() {
           </div>
         </OrderButtonContainer>
       </CartProductListContainer>
-
-      <TodayRecommendProducts>
-        <Title>이달의 추천 상품</Title>
-        <ProductItemSlider data={bestProductData && bestProductData.data} />
-      </TodayRecommendProducts>
     </Container>
   );
 }
