@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import logo from "../../../src/assets/logo.jpg";
+import logo from "../../../src/assets/logo.svg";
 import githubLogo from "../../assets/github-logo.png";
 
 const Page = styled.div`
