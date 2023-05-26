@@ -50,8 +50,8 @@ function ProductItem({ id, imgUrl, name, price }) {
   return (
     <Item>
       <a href={ref}>
-        <div className="image_wrapper">
-          <img src={imgUrl} />
+        <div className="image_wrapper" aria-hidden="true">
+          <img src={imgUrl} alt="상품사진"/>
         </div>
         <div className="info">
           <h3 className="name">{name}</h3>

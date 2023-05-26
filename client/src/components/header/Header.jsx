@@ -305,7 +305,7 @@ function Header() {
       <div className="mid flex">
         <div className="logo">
           <a href="/">
-            <img src={logo} alt="logo"></img>
+            <img src={logo} alt="컬리나리"></img>
           </a>
         </div>
         <form className="search" onSubmit={handleSearchProductSubmit}>
@@ -322,7 +322,7 @@ function Header() {
           </div>
           <div className="icons">
             <a href="/cart">
-              <BsCart4 className="icon" />
+              <BsCart4 className="icon" aria-label="장바구니"/>
             </a>
           </div>
         </div>

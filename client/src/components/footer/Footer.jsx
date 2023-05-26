@@ -63,7 +63,7 @@ function Footer() {
     <Page>
       <div className="footer_container">
         <div className="left_box">
-          <img className="logo" src={logo}></img>
+          <img className="logo" src={logo} alt="컬리나리 로고"></img>
         </div>
         <div className="right_box">
           <div className="team_name">

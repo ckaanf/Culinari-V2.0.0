@@ -286,7 +286,7 @@ function Search() {
 			</div>
 			{data && data.data.length ? null : (
 				<ProductNoneImageWrapper>
-					<img src={productNone} />
+					<img src={productNone} alt="검색된 상품이 없습니다"/>
 				</ProductNoneImageWrapper>
 			)}
 			<Pagination

@@ -230,7 +230,7 @@ function Collection() {
 					</div>
 					{data && data.data.length === 0 ? (
 						<ProductNoneImageWrapper>
-							<img src={productNone} />
+							<img src={productNone} alt="검색된 상품이 없습니다"/>
 						</ProductNoneImageWrapper>
 					) : null}
 					<Pagination
